@@ -47,11 +47,44 @@ body {
 
   }
 
+  #panel-header .row .Navbar ul li i {
+    float: left;
+    margin-top: -1px;
+ font-size: 2.2em;
+ transition: 1s ease;
+ color: white;
+}
+
+#panel-header .row .Navbar ul {
+    float: right;
+  list-style: none;
+  margin-right: 48px;
+  
+  
+}
+
+
+
+#panel-header .row .Navbar ul li {
+    text-decoration: none;
+   width: 20px;
+   height: 20px;
+display: inline-block;
+margin-top: 2px;
+margin-left: 43px;
+
+}
+#panel-header .row .Navbar ul li  img{
+   width: 40px;
+   border-radius: 50%;
+
+}
+
   #panel-header .row .Navbar i:hover {
     color: #009688;
 
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     
       #panel-header .row .logo {
         width: 100%;
@@ -67,4 +100,53 @@ body {
         height: 60px;
         margin-top: 60px;
       }
+      #panel-header .row .Icon{
+          width: 10px;
+          height: 10px;
+     margin-left: 30px !important;
+    }
+    #panel-header .row .Icon2{
+        width: 10px;
+        height: 10px;
+   margin-left: 30px !important;
+  }
+  #panel-header .row .Navbar ul li i {
+    float: left;
+    margin-top: -1px;
+ transition: 1s ease;
+ color: white;
+}
+}
+
+@media only screen and (max-width: 568px) {
+    body{
+        background: green !important;
+
+    }
+
+    #panel-header .row .Navbar i {
+        margin-top: 17px;
+       font-size: 1.3em;
+    }
+    #panel-header .row .Navbar ul {
+        font-size: 1.3em;
+        margin-right: 25px;
+
+    }
+    #panel-header .row .Navbar ul li i {
+        font-size: 0.8em;
+        margin-top: 7px;
+    }
+    #panel-header .row .Navbar ul li {
+        margin-left: 9px;
+    }
+    #panel-header .row .Navbar ul li  img{
+        width: 28px;
+        margin-left: 10px;
+    }
+    #panel-header .row .Icon{
+        width: 10px;
+        height: 10px;
+   margin-left: 16px !important;
+  }
 }
