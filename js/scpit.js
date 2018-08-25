@@ -7,17 +7,20 @@
 //     $("i").css("color","black");
 // });
 
+
 var nav = true;
 $(document).ready(function(){
-    $('.Icon2').click(function(){
-      
+    $(".Navbar > ul > li > .Icon2").click(function(){      
       if(nav == true){
         $('.Icon2').css("color","white");
         $(this).css("color","black"); 
+        $($(this).parent().children().last()).css("height","200px");
+        console.log($($(this).parent().children().last()));
         nav = false;
       }
       else{
         $(this).css("color","white");
+        $($(this).parent().children().last()).css("height","0px");
         nav = true;
       }
     });
@@ -57,15 +60,20 @@ $(".Left").click(function(){
 //     });
 
 // });
-// var sayi = 25;
-// $(window).resize(function(){
-//     if(window.innerWidth<768)
-//     {
-       
+$(window).resize(function(){
+    if(window.innerWidth<800)
+    {
+        $(".logo").css("width","100%");
         
-//     }
-//     else{
-     
-//     }
-//     console.log(window.innerWidth)
-//     })
+    }
+    if(window.innerWidth>800){
+     if(Hide==false){
+        $(".logo").css("width","50px");
+     }
+     else{
+        $(".logo").css("width","250px");
+     }
+    }
+    // console.log(window.innerWidth)
+    })
+
