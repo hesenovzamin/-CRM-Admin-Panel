@@ -39,7 +39,7 @@ body {
     height: 60px;
   }
 
-  #panel-header .row .Navbar i {
+  #panel-header .row .Navbar .Ic {
       cursor: pointer;
       float: left;
       margin-top: 13px;
@@ -51,7 +51,7 @@ body {
 
   }
 
-  #panel-header .row .Navbar ul li i {
+  #panel-header .row .Navbar ul li .Icon2 {
     float: left;
     margin-top: -1px;
  font-size: 2.2em;
@@ -149,7 +149,7 @@ cursor: pointer;
         height: 10px;
    margin-left: 30px !important;
   }
-  #panel-header .row .Navbar ul li i {
+  #panel-header .row .Navbar ul li > i {
     float: left;
     margin-top: -1px;
  transition: 1s ease;
@@ -189,7 +189,7 @@ cursor: pointer;
         margin-right: 25px;
 
     }
-    #panel-header .row .Navbar ul li i {
+    #panel-header .row .Navbar ul  li > i {
         font-size: 0.8em;
         margin-top: 7px;
     }
@@ -251,6 +251,25 @@ cursor: pointer;
 	background-color: gray;
 }
 
+.Setting::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.Setting::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #F5F5F5;
+}
+
+.Setting::-webkit-scrollbar-thumb
+{
+	border-radius: 50px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: gray;
+}
 
 .DropdownShow img{
     margin: 10px 5px;
@@ -273,3 +292,80 @@ cursor: pointer;
     font-size: 13px;
 }
 
+.DropdownBell{
+    width: 250px;
+    height: 33px;
+    background: #e5f3ed;
+    transition: 1s ease;
+    box-sizing: border-box;
+}
+
+.DropdownBell:hover{
+ 
+    background: white;
+
+}
+
+.DropdownBell i{
+
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-left: 7px;
+    color: #009688;
+}
+
+.DropdownBell p{
+    font-size: 1em;
+    margin-top: -27px;
+    margin-left: 32px;
+    font-family: 'Lato', sans-serif;
+    }
+
+    .DropdownBell .label{
+        
+        margin-top: -35px;
+        color: white;
+       
+        display: inline;
+        padding: .2em 0.5em 0.1em;
+        float: right;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25em;
+
+    }
+
+    .Setting i{
+        
+            font-size: 1.1em;
+            margin-top: 10px;
+            margin-left: 7px;
+            color: black;
+        }
+
+    .Setting{
+        width: 250px;
+        height: 54px;
+        background:white;
+        transition: 1s ease;
+        box-sizing: border-box;
+    }
+
+    .Setting p{
+        font-size: 1em;
+        margin-top: -27px;
+        margin-left: 43px;
+        font-family: 'Lato', sans-serif;
+        }
+    /* margin-left: -132px;
+    width: 170px;
+    height: 137px; */
+
+    .Icon22{
+        
+    }

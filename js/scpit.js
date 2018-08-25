@@ -10,9 +10,10 @@
 
 var nav = true;
 $(document).ready(function(){
-    $(".Navbar > ul > li > .Icon2").click(function(){      
+    $(".Navbar > ul > li > .Icon22").click(function(){      
       if(nav == true){
         $('.Icon2').css("color","white");
+        $($(".Navbar > ul > li > .Drop")).css("height","0px");
         $(this).css("color","black"); 
         $($(this).parent().children().last()).css("height","200px");
         console.log($($(this).parent().children().last()));
