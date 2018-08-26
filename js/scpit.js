@@ -1,15 +1,7 @@
-// $(".icon2").click(function(){
-//     $(".icon2").css("background","black")
-//     console.log("aaaaa");
-// })
-
-// $("i").click(function(){
-//     $("i").css("color","black");
-// });
-
 
 var nav = true;
 $(document).ready(function(){
+  $(".Menu").css("height",MenuWidth+"px")
     $(".Navbar > ul > li > .Icon22").click(function(){      
       if(nav == true){
         $('.Icon2').css("color","white");
@@ -27,9 +19,11 @@ $(document).ready(function(){
     });
 });
 
+var MenuWidth = window.innerHeight;
+
 var Hide = true;
 $(".Left").click(function(){
-   if(Hide==true){
+   if(Hide==true && window.innerWidth>800){
     $(".logo").css("width","50px");
     $(this).css("margin-left","60px");
     console.log("asd");
@@ -43,28 +37,19 @@ $(".Left").click(function(){
   
 })
 
-// $('.Navbar').click(function(){
-//     if(nav ==false)
-//     {
-//       $('i').css("color","white");
-//       console.log("");
-//       nav = true;
-//     }
-//   });
+ var DropArray=  $(".Drop");
 
-
-// $(function(){
-//     $("i").click(function(){
-//         $(this).css("color","black");
-//     },function(){
-
-//     });
-
-// });
-$(window).resize(function(){
+var Hide = true;
+$(document).ready(function(){
+  $(window).resize(function(){
+    MenuWidth = window.innerHeight;
+    $(".Menu").css("height",MenuWidth+"px")
     if(window.innerWidth<800)
     {
         $(".logo").css("width","100%");
+        $(".Drop").css("margin-left","-167px"); 
+        $(".Drop").parent().last().children().last().css("margin-left","-233px");
+ 
         
     }
     if(window.innerWidth>800){
@@ -78,3 +63,10 @@ $(window).resize(function(){
     // console.log(window.innerWidth)
     })
 
+})
+
+// margin-left: -167px;
+
+// font-size: 0.7em;
+// margin-top: -27px;
+// margin-left: 38px;
