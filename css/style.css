@@ -441,7 +441,6 @@ position: relative;
     position: absolute;
     top: 0;
     left: 0;
-  
     min-height: 100%;
     width: 250px;
     overflow: hidden;
@@ -461,24 +460,31 @@ position: relative;
 }
 
 #Page .Menu .ul{
+    transition: 0.2s ease-in-out; 
     list-style: none;
     padding: 0px;
     color: white;
 }
 #Page .Menu .UlDrop{
     list-style: none;
-    margin-left: 17px;
+      transition: 0.2s ease-in-out; 
+    margin-left: 3px;
+    padding-left: 53px;
     background-color: #07161e;
     
 }
 #Page .Menu  .ul > li .UlDrop li{
+
     margin-top: 5px;
+    transition: 0.2s ease-in-out; 
     position: relative;
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 13px;
 }
 
 #Page .Menu  .ul > li{
+    cursor: pointer;
     margin-top: 12px;
     position: relative;
 }
@@ -541,6 +547,8 @@ position: relative;
 
  
     #Page .Menu .HoverLeft{
+        transition: 0.2s ease-in-out; 
+
         position: absolute;
         right: 14px;
         top: 20px;

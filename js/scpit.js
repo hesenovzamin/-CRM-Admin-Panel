@@ -63,5 +63,8 @@ $(document).ready(function(){
      }
     }
     })
-
 })
+var DropClick = true;
+$(".Click").click(function(){
+  $(".UlDrop").css("height","0px");
+});
