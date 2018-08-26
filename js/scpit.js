@@ -43,19 +43,23 @@ $(document).ready(function(){
     
     
     if(window.innerWidth<800)
-    {   $(".Menu  ")
-        $(".logo").css("width","100%");
+    $(".Menu").css("width","0px");
+    { 
+        $(".logo").css("width","100%");       
         $(".Drop").css("margin-left","-167px"); 
         $(".Drop").parent().last().children().last().css("margin-left","-233px");
  
         
     }
     if(window.innerWidth>800){
+      $("#Page").css("margin-top","0px");
      if(Hide==false){
+      $(".Menu").css("width","50px");
         $(".logo").css("width","50px");
      }
      else{
         $(".logo").css("width","250px");
+        $(".Menu").css("width","250px");
      }
     }
     })

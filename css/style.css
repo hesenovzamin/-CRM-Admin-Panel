@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0px;
   }
   
   #panel-header .row {
@@ -20,7 +21,7 @@ body {
     background-color: #0E0E0E;
     box-sizing: border-box;
     position: absolute;
-    transition: 1s ease;    
+    transition: 0.2s ease-in-out;   
     top: 0;
     left: 0;
     width: 250px;
@@ -35,6 +36,7 @@ body {
   }
   #panel-header .row .Navbar {
     width: 100%;
+ 
     background: #2A3F54;
     height: 60px;
   }
@@ -44,7 +46,7 @@ body {
       float: left;
       margin-top: 13px;
    font-size: 2.2em;
-   transition: 1s ease;
+   transition: 0.2s ease-in-out;   
    margin-left: 20px;
    color: white;
   
@@ -56,7 +58,7 @@ body {
     float: left;
     margin-top: -1px;
  font-size: 2.2em;
- transition: 1s ease;
+ transition: 0.2s ease-in-out; 
  color: white;
 }
 
@@ -108,8 +110,29 @@ position: relative;
     color: #009688;
 
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) { 
+
+    #Page .Menu{
+       
+        min-height: 100%;
+        width: 0px !important;
+    }
+
+
+    #Page .Dashboard{
+        width: 86%;
+        height: 70px;
+        margin-left: 0px !important;
     
+    }
+    
+    #Page{
+        position: relative;
+        width: 100%;
+        margin-top: 60px !important;
+    
+     }
+ 
     #panel-header .row .Navbar .count {
         color: white;
         /* width: 18px; */
@@ -153,7 +176,7 @@ position: relative;
   #panel-header .row .Navbar ul li > i {
     float: left;
     margin-top: -1px;
- transition: 1s ease;
+ transition: 0.2s ease-in-out; 
  color: white;
 }
 }
@@ -187,7 +210,7 @@ position: relative;
         width: 250px;
         height: 33px;
         background: #e5f3ed;
-        transition: 1s ease;
+        transition: 0.2s ease-in-out; 
         box-sizing: border-box;
     }
 
@@ -254,14 +277,14 @@ position: relative;
     margin-top: 46px;
     z-index: 123453;
     margin-left: -182px;
-    transition: 1s ease;
+    transition: 0.2s ease-in-out; 
 }
 
 .DropdownShow{
     width: 250px;
     height: 55px;
     background: #e5f3ed;
-    transition: 1s ease;
+    transition: 0.2s ease-in-out; 
     box-sizing: border-box;
 }
 
@@ -334,7 +357,7 @@ position: relative;
     width: 250px;
     height: 33px;
     background: #e5f3ed;
-    transition: 1s ease;
+    transition: 0.2s ease-in-out; 
     box-sizing: border-box;
 }
 
@@ -390,7 +413,7 @@ position: relative;
         width: 250px;
         height: 54px;
         background:white;
-        transition: 1s ease;
+        transition: 0.2s ease-in-out; 
         box-sizing: border-box;
     }
 
@@ -411,6 +434,7 @@ position: relative;
     #Page{
        position: relative;
        width: 100%;
+   
     }
 
 #Page .Menu{
@@ -421,7 +445,7 @@ position: relative;
     min-height: 100%;
     width: 250px;
     overflow: hidden;
-    transition: 1s ease;
+    transition: 0.2s ease-in-out; 
     z-index: 810;
     background-color: black;
 }
@@ -436,12 +460,34 @@ position: relative;
     width: 250px;
 }
 
-#Page .Menu ul{
+#Page .Menu .ul{
     list-style: none;
     padding: 0px;
     color: white;
-    height: 1000px;
 }
+#Page .Menu .UlDrop{
+    list-style: none;
+    margin-left: 17px;
+    background-color: #07161e;
+    
+}
+#Page .Menu  .ul > li .UlDrop li{
+    margin-top: 5px;
+    position: relative;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+#Page .Menu  .ul > li{
+    margin-top: 12px;
+    position: relative;
+}
+
+#Page .Menu ul li a{
+    margin-left : 12px;
+}
+
+
 
 
 #Page .Menu p{
@@ -450,7 +496,57 @@ position: relative;
 }
 
 
-#Page .Menu i{
+#Page .Menu .MenuIcon{
     margin-left: 16px;
     margin-top: 10px;
 }
+
+#Page .FullPage{
+   width:100%;
+   overflow: hidden;
+}
+
+
+#Page .Dashboard{
+    width: 86%;
+    height: 70px;
+    margin-left: 250px;
+
+}
+
+#Page .Dashboard i{
+    font-size: 3em;
+    color: #009688;
+    margin-left: 25px;
+    margin-top: 10px;
+   
+}
+
+#Page .Dashboard p{
+
+    margin-left: 95px;
+    margin-top: -7px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #222;
+    
+ }
+
+ #Page .Dashboard h3{
+    font-size: 1.5em;
+    margin-left: 90px;
+    margin-top: -47px;
+    
+ }
+
+ 
+    #Page .Menu .HoverLeft{
+        position: absolute;
+        right: 14px;
+        top: 20px;
+        margin-top: -7px;
+
+    }
+
+
+
