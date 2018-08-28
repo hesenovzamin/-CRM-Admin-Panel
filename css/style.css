@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0px;
+    background-color: #edeff2 !important;
   }
   
   #panel-header .row {
@@ -57,7 +58,7 @@ body {
     cursor: pointer;
     float: left;
     margin-top: -1px;
- font-size: 3.3em;
+ font-size: 2.2em;
  transition: 0.2s ease-in-out; 
  color: white;
 }
@@ -686,12 +687,180 @@ position: relative;
          margin-left: 10px;
      }
  
+     .detailswork p {
+        border-bottom: 1px solid gray;
+        padding-bottom: 6px;
+        color: #222;
+        font-weight: 500;
+    }
+    .detailswork a {
+        color: #222;
+        font-weight: 600;
+    }
+    .work-touchpoint-date {
+        float: left;
+        margin: 0 10px 0 0;
+        border: 1px solid gray;
+        background: #f2f2f2;
+    }
+    .work-touchpoint-date2 {
+        float: left;
+        margin: 0 10px 0 0;
+        border: 1px solid gray;
+        background: #f2f2f2;
+    }
+    .work-touchpoint-date .day {
+        color: #323232;
+        display: block;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1;
+        padding: 4px 0;
+        text-align: center;
+        width: 30px;
+    }
+    .work-touchpoint-date2 .day {
+        color: #323232;
+        display: block;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1;
+        padding: 4px 0;
+        text-align: center;
+        width: 30px;
+    }
+    .work-touchpoint-date .month {
+        background-color: #009688;
+        color: #fff;
+        display: block;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 1;
+        padding: 3px 0 3px 0;
+        text-align: center;
+        text-transform: uppercase;
+        width: 30px;
+    }
+    .work-touchpoint-date2 .month {
+        background-color: #222;
+        color: #fff;
+        display: block;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 1;
+        padding: 3px 0 3px 0;
+        text-align: center;
+        text-transform: uppercase;
+        width: 30px;
+    }
 
-     
+    .Panel{
+        margin-left: 43px; 
+        box-shadow: 5px 5px #d1d8e0;       
+        width: 45%;
+        height: 260px;
+        background-color: green;
+        display: inline-block;
+    }
 
+    .PanelHeader{
+        position: relative;
+        padding-top: 6px;
+    padding-left: 15px;
+        width:100%;
+        height: 45px;
+        background-color: #e8f1f3;
 
+    }
+
+    .PanelHeader ul{
+       list-style: none;
+       position: absolute;
+       top: 20%;
+       left: 76%;
+
+    }
+
+    .PanelHeader ul li{
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .PanelBody{
+        width: 100%;
+        background: white;
+        height: 215px;
+      padding: 15px;
+    }
+    .PanelList{
+        cursor: pointer;
+        width: 100%;
+        background: white;
+        height: 50px;
+        border-bottom: 1px solid black;
+    }
+ 
+    .work-touchpoint-date {
+        float: left;
+        margin: 0 10px 0 0;
+        border: 1px solid gray;
+        background: #f2f2f2;
+    }
+    .PanelList p{
+        color: #c4c5c6;
+        margin-top: -4px;
+    }
+    .PanelList a{
+        text-decoration: none;
+       color: black;
+    }
+    .PanelList a:hover{
+        text-decoration: none;
+       color: black;
+    }
+    .work-touchpoint-date2 .day {
+        color: #323232;
+        display: block;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1;
+        padding: 4px 0;
+        text-align: center;
+        width: 30px;
+    }
+    .work-touchpoint-date .month {
+        background-color: #009688;
+        color: #fff;
+        display: block;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 1;
+        padding: 3px 0 3px 0;
+        text-align: center;
+        text-transform: uppercase;
+        width: 30px;
+    }
+    .label-custom {
+        color: white;
+
+        background-color: #009688;
+        border: 2px solid #009688;
    
-
+    }
+    .label {
+        display: inline;
+        margin-top: -49px;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25em;
+    }
 
 
 

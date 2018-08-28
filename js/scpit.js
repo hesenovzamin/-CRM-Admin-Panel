@@ -157,3 +157,23 @@ $(".Click").click(function(){
 
 
 // 0
+var a;
+// $(document).ready(function(){ 
+//   $( "#PanelHeader" ).draggable ();
+//   console.log(asd);
+// })
+
+$(".FullScr").click(function(){
+   a = $(this).parent().parent().parent().parent();
+   console.log(a.length);
+  var element =   $(this).parent().parent().parent().parent();
+  $(this).parent().parent().parent().parent().hide();
+  element.css("position","fixed");
+  element.css(" z-index ","1000000000");
+ 
+  element.css("width",window.innerWidth+"px");
+  element.css("margin","0px");
+
+  console.log("asdasd");
+  
+});

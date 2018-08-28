@@ -2,227 +2,265 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="lobipanel-master/lib/jquery-ui.min.css"/>
-    <link rel="stylesheet" href="lobipanel-master/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="lobipanel-master/dist/css/lobipanel.min.css"/>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-    <title>Document</title>
+      <title>Document</title>
 </head>
-
 <body>
-        <section id="panel-header">
+      <section id="panel-header">
 
 
-                <div class="row">
-                    <div class="logo">
-                        <div class="header-img"><img src="../image/logo.png" alt="index.html"></div>
-                    </div>
-                    <div class="Navbar">
-                            <i style="  margin-left: 265px;" class="Icon Ic Left fa fa-chevron-circle-left"></i>
-                            <i style="  margin-left: 20px;" class="Icon Ic fa fa-search"></i>          
-                            <ul>
-                                <li>                             
-                                <i class="Shop Icon2 Icon22 fa fa-shopping-cart"></i>
-                                <span style="background:#3a95e4;" class="count">4</span>   
-                                <div class="Drop">
-                                    <div class="DropdownShow">
-                                    <img src="../image/basketball-jersey.png"> 
-                                    <h5>polo shirt</h5>   
-                                    <p>total item:21</p>
-                                    </div>    
-                                    <div class="DropdownShow">
-                                            <img src="../image/shirt.png"> 
-                                            <h5>Kits</h5>   
-                                            <p>total item:11</p>    
-                                    </div>  
-                                    <div class="DropdownShow">
-                                            <img src="../image/football.png"> 
-                                            <h5>Football</h5>   
-                                            <p>total item:16</p>    
-                                    </div>  
-                                    <div class="DropdownShow">
-                                            <img src="../image/shoe.png"> 
-                                            <h5>Sport sheos</h5>   
-                                            <p>total item:10</p>    
-                                    </div>  
-                                </div>                              
-                                </li>
-                                <li>   
-                                      <i class="Icon2 Icon22 fa fa-envelope"></i>
+            <div class="row">
+                  <div class="logo">
+                        <div class="header-img">
+                              <img src="../image/logo.png" alt="index.html">
+                        </div>
+                  </div>
+                  <div class="Navbar">
+                        <i style="  margin-left: 265px;" class="Icon Ic Left fa fa-chevron-circle-left"></i>
+                        <i style="  margin-left: 20px;" class="Icon Ic fa fa-search"></i>
+                        <ul>
+                              <li>
+                                    <i class="Shop Icon2 Icon22 fa fa-shopping-cart"></i>
+                                    <span style="background:#3a95e4;" class="count">4</span>
+                                    <div class="Drop">
+                                          <div class="DropdownShow">
+                                                <img src="../image/basketball-jersey.png">
+                                                <h5>polo shirt</h5>
+                                                <p>total item:21</p>
+                                          </div>
+                                          <div class="DropdownShow">
+                                                <img src="../image/shirt.png">
+                                                <h5>Kits</h5>
+                                                <p>total item:11</p>
+                                          </div>
+                                          <div class="DropdownShow">
+                                                <img src="../image/football.png">
+                                                <h5>Football</h5>
+                                                <p>total item:16</p>
+                                          </div>
+                                          <div class="DropdownShow">
+                                                <img src="../image/shoe.png">
+                                                <h5>Sport sheos</h5>
+                                                <p>total item:10</p>
+                                          </div>
+                                    </div>
+                              </li>
+                              <li>
+                                    <i class="Icon2 Icon22 fa fa-envelope"></i>
                                     <span style="background:#50ab20;" class="count">2</span>
                                     <div style="margin-left: -178px;" class="Drop">
-                                            <div class="DropdownShow">
-                                                    <img src="../image/avatar.png"> 
-                                                    <h5>Ronaldo</h5>   
-                                                    <p>Please oreder 10 pices of kits..</p>
-                                                    </div>    
-                                                    <div class="DropdownShow">
-                                                            <img src="../image/avatar2.png"> 
-                                                            <h5>Leo Messi</h5>   
-                                                            <p>Please oreder 10 pices of kits..</p>    
-                                                    </div>  
-                                                    <div class="DropdownShow">
-                                                            <img src="../image/avatar3.png"> 
-                                                            <h5>Modric</h5>   
-                                                            <p>Please oreder 6 pices of bats..</p>    
-                                                    </div>  
-                                                    <div class="DropdownShow">
-                                                            <img src="../image/avatar4.png"> 
-                                                            <h5>Salman</h5>   
-                                                            <p>Hello i want 4 uefa footballs</p>    
-                                                    </div>      
-                                    </div>  
-                                </li>  
-                                <li><i class="Icon2 Icon22 fa fa-bell"></i>
-                                    <span style="background:#ffc751;"  class="count">3</span>
+                                          <div class="DropdownShow">
+                                                <img src="../image/avatar.png">
+                                                <h5>Ronaldo</h5>
+                                                <p>Please oreder 10 pices of kits..</p>
+                                          </div>
+                                          <div class="DropdownShow">
+                                                <img src="../image/avatar2.png">
+                                                <h5>Leo Messi</h5>
+                                                <p>Please oreder 10 pices of kits..</p>
+                                          </div>
+                                          <div class="DropdownShow">
+                                                <img src="../image/avatar3.png">
+                                                <h5>Modric</h5>
+                                                <p>Please oreder 6 pices of bats..</p>
+                                          </div>
+                                          <div class="DropdownShow">
+                                                <img src="../image/avatar4.png">
+                                                <h5>Salman</h5>
+                                                <p>Hello i want 4 uefa footballs</p>
+                                          </div>
+                                    </div>
+                              </li>
+                              <li>
+                                    <i class="Icon2 Icon22 fa fa-bell"></i>
+                                    <span style="background:#ffc751;" class="count">3</span>
                                     <div style="margin-left: -234px; width:280px;" class="Drop">
-                                            <div class="DropdownBell">
-                                                    <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
-                                                    <p>Change Your font style</p>
-                                              </div> 
-                                              <div class="DropdownBell">
-                                                    <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
-                                                    <p>check the system ststus..</p>
-                                              </div>     
-                                              <div class="DropdownBell">
-                                                    <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
-                                                    <p>Add more admin ...</p>
-                                              </div>     
-                                              <div class="DropdownBell">
-                                                    <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
-                                                    <p> Add more clients and order</p>
-                                              </div>     
-                                              <div class="DropdownBell">
-                                                    <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
-                                                    <p>Add more admin ...</p>
-                                              </div>                                                            
-                                    </div>  
-                                </li>
-                                <li><i class="Icon2 Icon22 fa fa-sticky-note"></i>
-                                    <span style="background:#E5343D;"  class="count">4</span>
+                                          <div class="DropdownBell">
+                                                <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                                                <p>Change Your font style</p>
+                                          </div>
+                                          <div class="DropdownBell">
+                                                <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                                                <p>check the system ststus..</p>
+                                          </div>
+                                          <div class="DropdownBell">
+                                                <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                                                <p>Add more admin ...</p>
+                                          </div>
+                                          <div class="DropdownBell">
+                                                <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                                                <p> Add more clients and order</p>
+                                          </div>
+                                          <div class="DropdownBell">
+                                                <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                                                <p>Add more admin ...</p>
+                                          </div>
+                                    </div>
+                              </li>
+                              <li>
+                                    <i class="Icon2 Icon22 fa fa-sticky-note"></i>
+                                    <span style="background:#E5343D;" class="count">4</span>
                                     <div style="margin-left: -234px; width:280px;" class="Drop">
-                                            <div class="DropdownBell">
-                                                    <i style="color:black;" class="fa fa-check-circle" aria-hidden="true"></i>
-                                                    <p>Change Your font style</p>
-                                                    <span style=" background-color: #50ab20;
+                                          <div class="DropdownBell">
+                                                <i style="color:black;" class="fa fa-check-circle" aria-hidden="true"></i>
+                                                <p>Change Your font style</p>
+                                                <span style=" background-color: #50ab20;
                                                     border: 2px solid #50ab20;" class="label">50%</span>
-                                              </div> 
-                                              <div class="DropdownBell">
-                                                    <i style="color:black;"  class="fa fa-check-circle" aria-hidden="true"></i>
-                                                    <p>check the system ststus..</p>
-                                                    <span style=" background-color: #f0ad4e;
+                                          </div>
+                                          <div class="DropdownBell">
+                                                <i style="color:black;" class="fa fa-check-circle" aria-hidden="true"></i>
+                                                <p>check the system ststus..</p>
+                                                <span style=" background-color: #f0ad4e;
                                                     border: 2px solid #f0ad4e;" class="label">90%</span>
-                                              </div>     
-                                              <div class="DropdownBell">
-                                                    <i style="color:black;"  class="fa fa-check-circle" aria-hidden="true"></i>
-                                                    <p>Add more admin ...</p>
-                                                    <span style=" background-color: #d9534f;
+                                          </div>
+                                          <div class="DropdownBell">
+                                                <i style="color:black;" class="fa fa-check-circle" aria-hidden="true"></i>
+                                                <p>Add more admin ...</p>
+                                                <span style=" background-color: #d9534f;
                                                     border: 2px solid #d9534f;" class="label">80%</span>
-                                              </div>     
-                                              <div class="DropdownBell">
-                                                    <i style="color:black;"  class="fa fa-check-circle" aria-hidden="true"></i>
-                                                    <p> Add more clients</p>
-                                                    <span style=" background-color: #5bc0de;
+                                          </div>
+                                          <div class="DropdownBell">
+                                                <i style="color:black;" class="fa fa-check-circle" aria-hidden="true"></i>
+                                                <p> Add more clients</p>
+                                                <span style=" background-color: #5bc0de;
                                                     border: 2px solid #5bc0de;" class="label">30%</span>
-                                              </div>     
-                                              <div class="DropdownBell">
-                                                    <i style="color:black;"  class="fa fa-check-circle" aria-hidden="true"></i>
-                                                    <p>Add more admin ...</p>
-                                                    <span style=" background-color: #50ab20;
+                                          </div>
+                                          <div class="DropdownBell">
+                                                <i style="color:black;" class="fa fa-check-circle" aria-hidden="true"></i>
+                                                <p>Add more admin ...</p>
+                                                <span style=" background-color: #50ab20;
                                                     border: 2px solid #50ab20;" class="label">60%</span>
-                                              </div>                                                            
-                                    </div>  
-                                </li>
-                                <li><i class="Icon2 Icon22 fa fa-cog"></i>
+                                          </div>
+                                    </div>
+                              </li>
+                              <li>
+                                    <i class="Icon2 Icon22 fa fa-cog"></i>
                                     <div style="margin-left: -234px; width:280px; background:white;" class="Drop">
-                                            <div class="Setting">
-                                                    <i class="fa fa-line-chart" aria-hidden="true"></i>
-                                                    <p> Networking</p>
-                                              </div> 
-                                              <div class="Setting">
-                                                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                                                    <p> Lan settings</p>
-                                              </div>     
-                                              <div class="Setting">
-                                                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                                                    <p> Settings</p>
-                                              </div>     
-                                              <div class="Setting">
-                                                    <i class="fa fa-wifi"></i>
-                                                    <p> wifi</p>
-                                              </div>                                                             
-                                    </div>  
-                                </li>
-                                <li style="margin-top:10px;border-radius:50%;">
+                                          <div class="Setting">
+                                                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                                <p> Networking</p>
+                                          </div>
+                                          <div class="Setting">
+                                                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                                <p> Lan settings</p>
+                                          </div>
+                                          <div class="Setting">
+                                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                                <p> Settings</p>
+                                          </div>
+                                          <div class="Setting">
+                                                <i class="fa fa-wifi"></i>
+                                                <p> wifi</p>
+                                          </div>
+                                    </div>
+                              </li>
+                              <li style="margin-top:10px;border-radius:50%;">
                                     <img class="Icon22" src="../image/avatar.png" alt="">
                                     <div style=" margin-top: 10px; margin-left: -234px; width:280px; background:white;" class="Drop">
-                                            <div class="Setting">
-                                                    <i class="fa fa-line-chart" aria-hidden="true"></i>
-                                                    <p>User Profil</p>
-                                              </div> 
-                                              <div class="Setting">
-                                                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                                                    <p>Inbox</p>
-                                              </div>     
-                                              <div class="Setting">
-                                                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                                                    <p> Signout</p>
-                                              </div>                                                               
-                                    </div>  
-                                </li>
-                            </ul>
-                    </div>
-                </div>       
-       </section> 
-       <section id="Page">           
-                  <div class="Menu">
-                       <ul class="ul">
-                             <li class="Click"> <i class="MenuIcon fa fa-tachometer" aria-hidden="true"></i>
+                                          <div class="Setting">
+                                                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                                <p>User Profil</p>
+                                          </div>
+                                          <div class="Setting">
+                                                <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                                <p>Inbox</p>
+                                          </div>
+                                          <div class="Setting">
+                                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                                <p> Signout</p>
+                                          </div>
+                                    </div>
+                              </li>
+                        </ul>
+                  </div>
+            </div>
+      </section>
+      <section id="Page">
+            <div class="Menu">
+                  <ul class="ul">
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-tachometer" aria-hidden="true"></i>
                               <a>Dashboard</a>
-                             </li>
-                             <li  class="Click"> <i class="MenuIcon fa fa-users" aria-hidden="true"></i>
+                        </li>
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-users" aria-hidden="true"></i>
                               <a>Customers</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                               <ul class="UlDrop">
-                                    <li><a href="">Add Customer</a></li>
-                                    <li><a>List</a></li>
-                                    <li><a>Groups</a></li>
+                                    <li>
+                                          <a href="">Add Customer</a>
+                                    </li>
+                                    <li>
+                                          <a>List</a>
+                                    </li>
+                                    <li>
+                                          <a>Groups</a>
+                                    </li>
                               </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-shopping-basket" aria-hidden="true"></i>
+                        </li>
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-shopping-basket" aria-hidden="true"></i>
                               <a>Transaction</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                               <ul class="UlDrop">
-                                          <li><a>New Deposit</a></li>
-                                          <li><a>New Expense</a></li>
-                                          <li><a>Transfer</a></li>
-                                          <li><a>View transaction</a></li>
-                                          <li><a>Balance Sheet</a></li>
-                                          <li><a>Transfer Report</a></li>
-                                         
-                               </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <li>
+                                          <a>New Deposit</a>
+                                    </li>
+                                    <li>
+                                          <a>New Expense</a>
+                                    </li>
+                                    <li>
+                                          <a>Transfer</a>
+                                    </li>
+                                    <li>
+                                          <a>View transaction</a>
+                                    </li>
+                                    <li>
+                                          <a>Balance Sheet</a>
+                                    </li>
+                                    <li>
+                                          <a>Transfer Report</a>
+                                    </li>
+
+                              </ul>
+                        </li>
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-shopping-cart" aria-hidden="true"></i>
                               <a>Sales</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                               <ul class="UlDrop">
-                                    <li><a>Invoieces</a></li>
-                                    <li><a>New Invoieces</a></li>
-                                    <li><a>Recurring Invoices</a></li>
-                                    <li><a>View transaction</a></li>
-                                    <li><a>Balance Sheet</a></li>
-                                    <li><a>Transfer Report</a></li>
+                                    <li>
+                                          <a>Invoieces</a>
+                                    </li>
+                                    <li>
+                                          <a>New Invoieces</a>
+                                    </li>
+                                    <li>
+                                          <a>Recurring Invoices</a>
+                                    </li>
+                                    <li>
+                                          <a>View transaction</a>
+                                    </li>
+                                    <li>
+                                          <a>Balance Sheet</a>
+                                    </li>
+                                    <li>
+                                          <a>Transfer Report</a>
+                                    </li>
                               </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-book" aria-hidden="true"></i>
+                        </li>
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-book" aria-hidden="true"></i>
                               <a>Task</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                               <ul class="UlDrop">
@@ -230,8 +268,9 @@
                                     <li>List</li>
                                     <li>Groups</li>
                               </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-shopping-bag" aria-hidden="true"></i>
+                        </li>
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-shopping-bag" aria-hidden="true"></i>
                               <a>Accounting</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                               <ul class="UlDrop">
@@ -239,8 +278,9 @@
                                     <li>List</li>
                                     <li>Groups</li>
                               </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-file-text" aria-hidden="true"></i>
+                        </li>
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-file-text" aria-hidden="true"></i>
                               <a>Report</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                               <ul class="UlDrop">
@@ -248,8 +288,9 @@
                                     <li>List</li>
                                     <li>Groups</li>
                               </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-bell" aria-hidden="true"></i>
+                        </li>
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-bell" aria-hidden="true"></i>
                               <a>Attendance</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                               <ul class="UlDrop">
@@ -257,8 +298,9 @@
                                     <li>List</li>
                                     <li>Groups</li>
                               </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-edit" aria-hidden="true"></i>
+                        </li>
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-edit" aria-hidden="true"></i>
                               <a>Recruitment</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                               <ul class="UlDrop">
@@ -266,8 +308,9 @@
                                     <li>List</li>
                                     <li>Groups</li>
                               </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-shopping-basket" aria-hidden="true"></i>
+                        </li>
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-shopping-basket" aria-hidden="true"></i>
                               <a>payroll</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                               <ul class="UlDrop">
@@ -275,8 +318,9 @@
                                     <li>List</li>
                                     <li>Groups</li>
                               </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-bitbucket-square" aria-hidden="true"></i>
+                        </li>
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-bitbucket-square" aria-hidden="true"></i>
                               <a>Stock</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                               <ul class="UlDrop">
@@ -284,8 +328,9 @@
                                     <li>List</li>
                                     <li>Groups</li>
                               </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-ticket" aria-hidden="true"></i>
+                        </li>
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-ticket" aria-hidden="true"></i>
                               <a>Tickets</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                               <ul class="UlDrop">
@@ -293,8 +338,9 @@
                                     <li>List</li>
                                     <li>Groups</li>
                               </ul>
-                             </li>                            
-                             <li class="Click"> <i class="MenuIcon fa fa-gear" aria-hidden="true"></i>
+                        </li>
+                        <li class="Click">
+                              <i class="MenuIcon fa fa-gear" aria-hidden="true"></i>
                               <a>settings</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                               <ul class="UlDrop">
@@ -302,105 +348,180 @@
                                     <li>List</li>
                                     <li>Groups</li>
                               </ul>
-                             </li>
-                             <li > <i class="MenuIcon fa fa-home" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                              <i class="MenuIcon fa fa-home" aria-hidden="true"></i>
                               <a>Companies</a>
-                             </li>
-                             <li> <i class="MenuIcon fa fa-stop-circle" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                              <i class="MenuIcon fa fa-stop-circle" aria-hidden="true"></i>
                               <a>Public Holiday</a>
-                             </li>
-                             <li> <i class="MenuIcon fa fa-user-circle" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                              <i class="MenuIcon fa fa-user-circle" aria-hidden="true"></i>
                               <a>User</a>
-                             </li>
-                             <li> <i class="MenuIcon fa fa-file-o" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                              <i class="MenuIcon fa fa-file-o" aria-hidden="true"></i>
                               <a>Items</a>
-                             </li>
-                             <li> <i class="MenuIcon fa fa-tree" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                              <i class="MenuIcon fa fa-tree" aria-hidden="true"></i>
                               <a>Departments</a>
-                             </li>
-                             <li> <i class="MenuIcon fa fa-file-text" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                              <i class="MenuIcon fa fa-file-text" aria-hidden="true"></i>
                               <a>Documents</a>
-                             </li>
-                             <li> <i class="MenuIcon fa fa-clock-o" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                              <i class="MenuIcon fa fa-clock-o" aria-hidden="true"></i>
                               <a>Training</a>
-                             </li>
-                             <li> <i class="MenuIcon fa fa-calendar" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                              <i class="MenuIcon fa fa-calendar" aria-hidden="true"></i>
                               <a>Caledder</a>
-                             </li>
-                             <li> <i class="MenuIcon fa fa-file-text" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                              <i class="MenuIcon fa fa-file-text" aria-hidden="true"></i>
                               <a>Notice Board</a>
-                             </li>
-                             <li> <i class="MenuIcon fa fa-envelope-o" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                              <i class="MenuIcon fa fa-envelope-o" aria-hidden="true"></i>
                               <a>Message</a>
-                             </li>
-                             <li> <i class="MenuIcon fa fa-comment" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                              <i class="MenuIcon fa fa-comment" aria-hidden="true"></i>
                               <a>Notes</a>
-                             </li>
-                       </ul>
+                        </li>
+                  </ul>
+            </div>
+            <div class="FullPage">
+                  <div class="Dashboard">
+                        <i class="fa fa-dashboard" aria-hidden="true"></i>
+                        <h3>CRM Admin Dashboard</h3>
+                        <p>Very detailed & featured admin.</p>
                   </div>
-                  <div class="FullPage" >
-                              <div class="Dashboard">
-                                  <i class="fa fa-dashboard" aria-hidden="true"></i>
-                                  <h3>CRM Admin Dashboard</h3>
-                                  <p>Very detailed & featured admin.</p>
+                  <div class="PanelPage">
+
+                        <div class="StaticBox">
+                              <i class="UserIcon fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                              <h3>Actice Client</h3>
+                              <span>11</span>
+                              <i class="Yuxari fa fa-play fa-rotate-270" aria-hidden="true"></i>
+                        </div>
+                        <div class="StaticBox">
+                              <i class="UserIcon fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                              <h3>Active Admin</h3>
+                              <span>4</span>
+                              <i class="Yuxari fa fa-play fa-rotate-270" aria-hidden="true"></i>
+                        </div>
+                        <div class="StaticBox">
+                              <i class="UserIcon fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                              <h3>Total Expenses</h3>
+                              <span>95</span>
+                              <i class="Yuxari fa fa-play fa-rotate-270" aria-hidden="true"></i>
+                        </div>
+                        <div class="StaticBox">
+                              <i class="UserIcon fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                              <h3>Running Projects</h3>
+                              <span>11</span>
+                              <i class="Yuxari fa fa-play fa-rotate-270" aria-hidden="true"></i>
+                        </div>
+
+                  </div>
+            </div>
+      </section>
+      <section style="position: relative;width: 100%;" id="Panel">
+            <div style=" margin-left: 250px;" class="Fullpanel">
+                  <div class="Panel">
+                        <div id="PanelHeader" class="PanelHeader">
+                              <h4>Upcoming Events</h4>
+                              <ul>
+                                    <li>
+                                          <i class="Mouse fa fa-arrows"></i>
+                                    </li>
+                                    <li>
+                                          <i class="Dropdwn fa fa-minus"></i>
+                                    </li>
+                                    <li>
+                                          <i class="FullScr fa fa-arrows-alt"></i>
+                                    </li>
+                              </ul>
+                        </div>
+                        <div class="PanelBody">
+                              <div class="PanelList">
+                                    <div class="work-touchpoint-date">
+                                          <span class="day">28</span>
+                                          <span class="month">Apr</span>                                   
+                                    </div>
+                                    <a href="#">Marketing policy</a> <br>
+                                    <p>Green Road - Dhaka,Bangladesh</p>
+                                    <span class="label-custom label label-default pull-right">Email</span>
                               </div>
-                              <div class="PanelPage">
-                                     
-                                           <div class="StaticBox">
-                                               <i class="UserIcon fa fa-user-plus fa-3x" aria-hidden="true"></i>
-                                               <h3>Actice Client</h3>
-                                               <span>11</span>
-                                               <i class="Yuxari fa fa-play fa-rotate-270" aria-hidden="true"></i>
-                                          </div>                                                                   
-                                          <div class="StaticBox">
-                                                <i class="UserIcon fa fa-user-plus fa-3x" aria-hidden="true"></i>
-                                                <h3>Active Admin</h3>
-                                                <span>4</span>
-                                                <i class="Yuxari fa fa-play fa-rotate-270" aria-hidden="true"></i>
-                                          </div>                                                                  
-                                          <div class="StaticBox">
-                                                <i class="UserIcon fa fa-user-plus fa-3x" aria-hidden="true"></i>
-                                                <h3>Total Expenses</h3>
-                                                <span>95</span>
-                                                <i class="Yuxari fa fa-play fa-rotate-270" aria-hidden="true"></i>
-                                          </div>                                                                    
-                                          <div class="StaticBox">
-                                                <i class="UserIcon fa fa-user-plus fa-3x" aria-hidden="true"></i>
-                                                 <h3>Running Projects</h3>
-                                                <span>11</span>
-                                                <i class="Yuxari fa fa-play fa-rotate-270" aria-hidden="true"></i>
-                                          </div>
-                                            
-                                </div>
+                              <div class="PanelList">
+                                          <div class="work-touchpoint-date">
+                                                      <span class="day">28</span>
+                                                      <span class="month">Apr</span>                                   
+                                                </div>
+                                                <a href="#">Marketing policy</a> <br>
+                                                <p>Green Road - Dhaka,Bangladesh</p>
+                                                <span class="label-custom label label-default pull-right">Email</span>
+                              </div>
+                              <div class="PanelList">
+                                          <div class="work-touchpoint-date">
+                                                      <span class="day">28</span>
+                                                      <span class="month">Apr</span>                                   
+                                                </div>
+                                                <a href="#">Marketing policy</a> <br>
+                                                <p>Green Road - Dhaka,Bangladesh</p>
+                                                <span class="label-custom label label-default pull-right">Email</span>
+                              </div>
+                              <div class="PanelList">
+                                          <div class="work-touchpoint-date">
+                                                      <span class="day">28</span>
+                                                      <span class="month">Apr</span>                                   
+                                                </div>
+                                                <a href="#">Marketing policy</a> <br>
+                                                <p>Green Road - Dhaka,Bangladesh</p>
+                                                <span class="label-custom label label-default pull-right">Email</span>
+                              </div>
+                        </div>
 
-                                <section>
-                                    <div class="PanelStyle panel panel-default lobipanel" data-sortable="true">
-                                          <div class="panel-heading">
-                                              <div class="panel-title">
-                                                  <h4>Panel title</h4>
-                                              </div>        
-                                          </div>
-                                          <div class="panel-body">
-                                              Panel 2
-                                          </div>
-                                      </div>
-                                </section>
-                                
                   </div>
+                  <div class="Panel">
+                        <div class="PanelHeader">
+                              <h4>Running Projects</h4>
+                              <ul>
+                                    <li>
+                                          <i class="fa fa-arrows"></i>
+                                    </li>
+                                    <li>
+                                          <i class="fa fa-minus"></i>
+                                    </li>
+                                    <li>
+                                          <i class="fa fa-arrows-alt"></i>
+                                    </li>
+                              </ul>
+                        </div>
+                        <div class="PanelBody">
+                              <div class="PanelList"></div>
+                              <div class="PanelList"></div>
+                              <div class="PanelList"></div>
+                              <div class="PanelList"></div>
+                        </div>
+
+                  </div>
+            </div>
+      </section>
 
 
-            </section>
-            
-            
 </body>
-<script
-src="https://code.jquery.com/jquery-3.3.1.js"
-integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-crossorigin="anonymous"></script>
+lobipanel.min
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../js/lobipanel.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <script src="../js/scpit.js"></script>
-<script src="lobipanel-master/lib/jquery.1.11.min.js"></script>
-<script src="lobipanel-master/lib/jquery-ui.min.js"></script>
-<script src="lobipanel-master/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="lobipanel-master/dist/js/lobipanel.min.js"></script>
+
 
 </html>
