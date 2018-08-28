@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="dist/css/lobipanel.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -289,52 +292,7 @@
                                     <li>List</li>
                                     <li>Groups</li>
                               </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-list" aria-hidden="true"></i>
-                              <a>Utilities</a>
-                              <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
-                              <ul class="UlDrop">
-                                    <li>Add Customer</li>
-                                    <li>List</li>
-                                    <li>Groups</li>
-                              </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-bar-chart" aria-hidden="true"></i>
-                              <a>Charts</a>
-                              <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
-                              <ul class="UlDrop">
-                                    <li>Add Customer</li>
-                                    <li>List</li>
-                                    <li>Groups</li>
-                              </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-briefcase" aria-hidden="true"></i>
-                              <a>Icons</a>
-                              <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
-                              <ul class="UlDrop">
-                                    <li>Add Customer</li>
-                                    <li>List</li>
-                                    <li>Groups</li>
-                              </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-list" aria-hidden="true"></i>
-                              <a>Other page</a>
-                              <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
-                              <ul class="UlDrop">
-                                    <li>Add Customer</li>
-                                    <li>List</li>
-                                    <li>Groups</li>
-                              </ul>
-                             </li>
-                             <li class="Click"> <i class="MenuIcon fa fa-bitbucket" aria-hidden="true"></i>
-                              <a>UI Elements</a>
-                              <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
-                              <ul class="UlDrop">
-                                    <li>Add Customer</li>
-                                    <li>List</li>
-                                    <li>Groups</li>
-                              </ul>
-                             </li>
+                             </li>                            
                              <li class="Click"> <i class="MenuIcon fa fa-gear" aria-hidden="true"></i>
                               <a>settings</a>
                               <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
@@ -385,19 +343,43 @@
                                   <h3>CRM Admin Dashboard</h3>
                                   <p>Very detailed & featured admin.</p>
                               </div>
-                              <div class="PanelPage Wid">
+                              <div class="PanelPage">
                                      
                                            <div class="StaticBox">
-                                               <i class="fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                                               <i class="UserIcon fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                                               <h3>Actice Client</h3>
+                                               <span>11</span>
+                                               <i class="Yuxari fa fa-play fa-rotate-270" aria-hidden="true"></i>
                                           </div>                                                                   
                                           <div class="StaticBox">
-                                               <i class="fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                                                <i class="UserIcon fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                                                <h3>Active Admin</h3>
+                                                <span>4</span>
+                                                <i class="Yuxari fa fa-play fa-rotate-270" aria-hidden="true"></i>
                                           </div>                                                                  
                                           <div class="StaticBox">
-                                                <i class="fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                                                <i class="UserIcon fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                                                <h3>Total Expenses</h3>
+                                                <span>95</span>
+                                                <i class="Yuxari fa fa-play fa-rotate-270" aria-hidden="true"></i>
                                           </div>                                                                    
                                           <div class="StaticBox">
-                                                 <i class="fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                                                <i class="UserIcon fa fa-user-plus fa-3x" aria-hidden="true"></i>
+                                                 <h3>Running Projects</h3>
+                                                <span>11</span>
+                                                <i class="Yuxari fa fa-play fa-rotate-270" aria-hidden="true"></i>
+                                          </div>
+                                          <div class="LobiPanel">
+                                                      <div class="panel panel-default">
+                                                                  <div class="panel-heading">
+                                                                      <div class="panel-title">
+                                                                          <h4>Panel title</h4>
+                                                                            </div>
+                                                                  </div>
+                                                                  <div class="panel-body">
+                                                                      Lorem ipsum...
+                                                                  </div>
+                                                              </div>
                                           </div>
                                  
                                 </div>
@@ -411,5 +393,9 @@ src="https://code.jquery.com/jquery-3.3.1.js"
 integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 crossorigin="anonymous"></script>
 <script src="js/scpit.js"></script>
+<script src="lib/jquery.1.11.min.js"></script>
+<script src="lib/jquery-ui.min.js"></script>
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="dist/js/lobipanel.min.js"></script>
 
 </html>

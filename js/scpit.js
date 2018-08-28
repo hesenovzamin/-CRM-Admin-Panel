@@ -19,55 +19,107 @@ $(document).ready(function(){
     });
 });
 
-
-
 var Hide = true;
+
+var clicksay = 0;
+
+
 $(".Left").click(function(){
-   if(Hide==true && window.innerWidth>800){
-    $(".logo").css("width","50px");
-    $(".Menu").css("width","50px");
-    $(this).css("margin-left","60px");
-    $("#Page > .Menu > ul > li > a").css("margin-left","58px");
-    $(".HoverLeft").css("display","none");
-    $(".Dashboard").css("margin-left","50px");
-    console.log("asd");
-    Hide=false;
-   }
-   else{
-    $(".logo").css("width","250px");
-    $(this).css("margin-left","265px");
-    $(".Menu").css("width","250px");
-    $("#Page > .Menu > ul > li > a").css("margin-left","12px");
-    $(".HoverLeft").css("display","block");
-    $(".Dashboard").css("margin-left","250px");
-    Hide=true;
-   }
+  clicksay++;
+
+    if(window.innerWidth<860){
+      if(Hide==true ){
+        $(".Menu").css("width","250px");
+        $(".logo").css("width","100%");
+        $("#Page > .Menu > ul > li > a").show();  
+        $(".HoverLeft").css("display","block");
+        $("#Page .FullPage").css("margin-left","245px");
+        console.log("asd");
+        Hide=false;
+       }
+       else{
+        $(".logo").css("width","100%");
+        $(".Menu").css("width","0px");
+        $("#Page > .Menu > ul > li > a").hide();
+        $(".HoverLeft").css("display","block");
+        $("#Page .FullPage").css("margin-left","0px");
+        Hide=true;
+       }
+    }
+    if(window.innerWidth>860){
+      if(Hide==true){
+        $(".logo").css("width","50px");
+        $(".Menu").css("width","50px");
+        $(this).css("margin-left","60px");
+        $("#Page > .Menu > ul > li > a").hide();
+        $(".HoverLeft").css("display","none");
+        $(".Dashboard").css("margin-left","50px");
+        $("#Page .PanelPage").css("margin-left","33px");
+        $("#Page .PanelPage").css("width","97.2%");
+        console.log("Sef sef sef sef sef ");
+        Hide=false;
+       }
+       else{
+        $(".logo").css("width","250px");
+        $(this).css("margin-left","265px");
+        $(".Menu").css("width","250px");
+        $("#Page > .Menu > ul > li > a").show();  
+        $(".HoverLeft").css("display","block");
+        $(".Dashboard").css("margin-left","250px");
+        $("#Page .PanelPage").css("margin-left","250px");
+        $("#Page .PanelPage").css("width","84.2%");
+        Hide=true;
+       }
+    }
   
+  //  else if(Hide==true && window.innerWidth>860){
+  //   $(".logo").css("width","50px");
+  //   $(".Menu").css("width","50px");
+  //   $(this).css("margin-left","60px");
+  //   $("#Page > .Menu > ul > li > a").css("margin-left","58px");
+  //   $(".HoverLeft").css("display","none");
+  //   $(".Dashboard").css("margin-left","50px");
+  //   console.log("asd");
+  //   Hide=false;
+  //  }
+ 
 })
+
 
 $(document).ready(function(){
   $(window).resize(function(){
     
     
-    if(window.innerWidth<800)
-    $(".Menu").css("width","0px");
+    if(window.innerWidth<860)
     { 
-        $(".logo").css("width","100%");       
-        $(".Drop").css("margin-left","-167px"); 
-        $(".Drop").parent().last().children().last().css("margin-left","-233px");
+     if(Hide==true){
+      $(".logo").css("width","100%");
+      $(".Menu").css("width","0px");
+      $(".Drop").css("margin-left","-167px"); 
+      $(".Drop").parent().last().children().last().css("margin-left","-233px");
+     }
  
         
     }
-    if(window.innerWidth>800){
+    if(window.innerWidth>860){
+      $("#Page > .Menu > ul > li > a").css("color","white");
+      $(".logo").css("width","250px");
       $("#Page").css("margin-top","0px");
-     if(Hide==false){
-      $(".Menu").css("width","50px");
-        $(".logo").css("width","50px");
-     }
-     else{
-        $(".logo").css("width","250px");
-        $(".Menu").css("width","250px");
-     }
+      $(".Menu").css("width","250px");
+      if(clicksay%2==1){
+        if(Hide==true){
+          $("#Page > .Menu > ul > li > a").hide();  
+          
+       }       
+      }
+      else{
+        if(Hide==false){
+          $("#Page > .Menu > ul > li > a").show();  
+          $(".Dashboard").css("margin-left","16px");
+          $("#Page .PanelPage").css("margin-left","16px");
+         }
+      }
+      
     }
     })
 })
@@ -118,3 +170,4 @@ $(".Click").click(function(){
 //       }
 //       Acardion=this;
 // });
+
