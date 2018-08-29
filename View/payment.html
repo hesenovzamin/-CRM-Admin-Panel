@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    
-<!-- Mirrored from crm.thememinister.com/crmAdmin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Aug 2018 08:35:49 GMT -->
+<!-- Mirrored from crm.thememinister.com/crmAdmin/payment.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Aug 2018 08:38:11 GMT -->
 <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,15 +27,9 @@
       <link href="../FileAndPlugin/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"/>
       <!-- Themify icons -->
       <link href="../FileAndPlugin/themify-icons/themify-icons.css" rel="stylesheet" type="text/css"/>
+      <!-- dataTables css -->
+      <link href="../FileAndPlugin/plugins/datatables/dataTables.min.css" rel="stylesheet" type="text/css"/>
       <!-- End Global Mandatory Style
-         =====================================================================-->
-      <!-- Start page Label Plugins 
-         =====================================================================-->
-      <!-- Emojionearea -->
-      <link href="../FileAndPlugin/plugins/emojionearea/emojionearea.min.css" rel="stylesheet" type="text/css"/>
-      <!-- Monthly css -->
-      <link href="../FileAndPlugin/plugins/monthly/monthly.css" rel="stylesheet" type="text/css"/>
-      <!-- End page Label Plugins 
          =====================================================================-->
       <!-- Start Theme Layout Style
          =====================================================================-->
@@ -47,7 +41,7 @@
          =====================================================================-->
    </head>
    <body class="hold-transition sidebar-mini">
-      <!--preloader-->
+   <!--preloader-->
       <div id="preloader">
          <div id="status"></div>
       </div>
@@ -73,13 +67,13 @@
                <!-- searchbar-->
                <a href="#search"><span class="pe-7s-search"></span></a>
                <div id="search">
-                 <button type="button" class="close">×</button>
-                 <form>
-                   <input type="search" value="" placeholder="Search.." />
-                   <button type="submit" class="btn btn-add">Search...</button>
-                </form>
-             </div>
-             <div class="navbar-custom-menu">
+                  <button type="button" class="close">×</button>
+                  <form>
+                     <input type="search" value="" placeholder="type keyword(s) here" />
+                     <button type="submit" class="btn btn-add">Search...</button>
+                  </form>
+               </div>
+               <div class="navbar-custom-menu">
                   <ul class="nav navbar-nav">
                      <!-- Orders -->
                      <li class="dropdown messages-menu">
@@ -503,7 +497,92 @@
                         <li><a href="allticket.html">All Tickets</a></li>
                      </ul>
                   </li>
-                 
+                  <li class="treeview">
+                     <a href="#">
+                     <i class="fa fa-list"></i>
+                     <span>Utilities</span>
+                     <span class="pull-right-container">
+                     <i class="fa fa-angle-left pull-right"></i>
+                     </span>
+                     </a>
+                     <ul class="treeview-menu">
+                        <li><a href="ativitylog.html">Activity Log</a></li>
+                        <li><a href="emailmes.html">Email message log</a></li>
+                        <li><a href="systemsts.html">System status</a></li>
+                     </ul>
+                  </li>
+                  <li class="treeview">
+                     <a href="#">
+                     <i class="fa fa-bar-chart"></i><span>Charts</span>
+                     <span class="pull-right-container">
+                     <i class="fa fa-angle-left pull-right"></i>
+                     </span>
+                     </a>
+                     <ul class="treeview-menu">
+                        <li class=""><a href="charts_flot.html">Flot Chart</a></li>
+                        <li><a href="charts_Js.html">Chart js</a></li>
+                        <li><a href="charts_morris.html">Morris Charts</a></li>
+                        <li><a href="charts_sparkline.html">Sparkline Charts</a></li>
+                     </ul>
+                  </li>
+                  <li class="treeview">
+                     <a href="#">
+                     <i class="fa fa-briefcase"></i>
+                     <span>Icons</span>
+                     <span class="pull-right-container">
+                     <i class="fa fa-angle-left pull-right"></i>
+                     </span>
+                     </a>
+                     <ul class="treeview-menu">
+                        <li><a href="icons_bootstrap.html">Bootstrap Icons</a></li>
+                        <li><a href="icons_fontawesome.html">Fontawesome Icon</a></li>
+                        <li><a href="icons_flag.html">Flag Icons</a></li>
+                        <li><a href="icons_material.html">Material Icons</a></li>
+                        <li><a href="icons_weather.html">Weather Icons </a></li>
+                        <li><a href="icons_line.html">Line Icons</a></li>
+                        <li><a href="icons_pe.html">Pe Icons</a></li>
+                        <li><a href="icon_socicon.html">Socicon Icons</a></li>
+                     </ul>
+                  </li>
+                  <li class="treeview">
+                     <a href="#">
+                     <i class="fa fa-list"></i> <span>Other page</span>
+                     <span class="pull-right-container">
+                     <i class="fa fa-angle-left pull-right"></i>
+                     </span>
+                     </a>
+                     <ul class="treeview-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="forget_password.html">Forget password</a></li>
+                        <li><a href="lockscreen.html">Lockscreen</a></li>
+                        <li><a href="404.html">404 Error</a></li>
+                        <li><a href="505.html">505 Error</a></li>
+                        <li><a href="blank.html">Blank Page</a></li>
+                     </ul>
+                  </li>
+                  <li class="treeview">
+                     <a href="#">
+                     <i class="fa fa-bitbucket"></i><span>UI Elements</span>
+                     <span class="pull-right-container">
+                     <i class="fa fa-angle-left pull-right"></i>
+                     </span>
+                     </a>
+                     <ul class="treeview-menu">
+                        <li><a href="buttons.html">Buttons</a></li>
+                        <li><a href="tabs.html">Tabs</a></li>
+                        <li><a href="notification.html">Notification</a></li>
+                        <li><a href="tree-view.html">Tree View</a></li>
+                        <li><a href="progressbars.html">Progressber</a></li>
+                        <li><a href="list.html">List View</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="panels.html">Panels</a></li>
+                        <li><a href="modals.html">Modals</a></li>
+                        <li><a href="icheck_toggle_pagination.html">iCheck, Toggle, Pagination</a></li>
+                        <li><a href="labels-badges-alerts.html">Labels, Badges, Alerts</a></li>
+                     </ul>
+                  </li>
                   <li class="treeview">
                      <a href="#">
                      <i class="fa fa-gear"></i>
@@ -606,442 +685,260 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                <div class="header-icon">
-                  <i class="fa fa-dashboard"></i>
+                  <i class="fa fa-money"></i>
                </div>
                <div class="header-title">
-                  <h1>CRM Admin Dashboard</h1>
-                  <small>Very detailed & featured admin.</small>
+                  <h1>Payment</h1>
+                  <small>Payments List</small>
                </div>
             </section>
             <!-- Main content -->
             <section class="content">
                <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                     <div id="cardbox1">
-                        <div class="statistic-box">
-                           <i class="fa fa-user-plus fa-3x"></i>
-                           <div class="counter-number pull-right">
-                              <span class="count-number">11</span> 
-                              <span class="slight"><i class="fa fa-play fa-rotate-270"> </i>
-                              </span>
-                           </div>
-                           <h3> Active Client</h3>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                     <div id="cardbox2">
-                        <div class="statistic-box">
-                           <i class="fa fa-user-secret fa-3x"></i>
-                           <div class="counter-number pull-right">
-                              <span class="count-number">4</span> 
-                              <span class="slight"><i class="fa fa-play fa-rotate-270"> </i>
-                              </span>
-                           </div>
-                           <h3>  Active Admin</h3>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                     <div id="cardbox3">
-                        <div class="statistic-box">
-                           <i class="fa fa-money fa-3x"></i>
-                           <div class="counter-number pull-right">
-                              <i class="ti ti-money"></i><span class="count-number">965</span> 
-                              <span class="slight"><i class="fa fa-play fa-rotate-270"> </i>
-                              </span>
-                           </div>
-                           <h3>  Total Expenses</h3>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                     <div id="cardbox4">
-                        <div class="statistic-box">
-                           <i class="fa fa-files-o fa-3x"></i>
-                           <div class="counter-number pull-right">
-                              <span class="count-number">11</span> 
-                              <span class="slight"><i class="fa fa-play fa-rotate-270"> </i>
-                              </span>
-                           </div>
-                           <h3> Running Projects</h3>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                     <div class="panel panel-bd lobidisable">
-                        <div class="panel-heading">
-                           <div class="panel-title">
-                              <h4>Upcoming Events</h4>
-                           </div>
-                        </div>
-                        <div class="panel-body">
-                           <div class="work-touchpoint">
-                              <div class="work-touchpoint-date">
-                                 <span class="day">28</span>
-                                 <span class="month">Apr</span>
-                              </div>
-                           </div>
-                           <div class="detailswork">
-                              <span class="label-custom label label-default pull-right">Email</span>
-                              <a href="#" title="headings">Marketing policy</a> <br>
-                              <p>Green Road - Dhaka,Bangladesh</p>
-                           </div>
-                           <div class="work-touchpoint">
-                              <div class="work-touchpoint-date">
-                                 <span class="day">2</span>
-                                 <span class="month">Apr</span>
-                              </div>
-                           </div>
-                           <div class="detailswork">
-                              <span class="label-custom label label-default pull-right">skype</span>
-                              <a href="#" title="headings">Accounting policy</a> <br>
-                              <p>Kolkata, India</p>
-                           </div>
-                           <div class="work-touchpoint">
-                              <div class="work-touchpoint-date2">
-                                 <span class="day">17</span>
-                                 <span class="month">Mrc</span>
-                              </div>
-                           </div>
-                           <div class="detailswork">
-                              <span class="label-custom label label-default pull-right">phone</span>
-                              <a href="#" title="headings">Marketing policy</a> <br>
-                              <p>Madrid  - spain</p>
-                           </div>
-                           <div class="work-touchpoint">
-                              <div class="work-touchpoint-date2">
-                                 <span class="day">3</span>
-                                 <span class="month">jan</span>
-                              </div>
-                           </div>
-                           <div class="detailswork">
-                              <span class="label-custom label label-default pull-right">Mobile</span>
-                              <a href="#" title="headings">Finance policy</a> <br>
-                              <p>south Australia  - Australia</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                     <div class="panel panel-bd lobidisable">
-                        <div class="panel-heading">
-                           <div class="panel-title">
-                              <h4>Running Projects</h4>
-                           </div>
-                        </div>
-                        <div class="panel-body">
-                           <div class="runnigwork">
-                              <span class="label-danger label label-default pull-right">Failed</span>
-                              <i class="fa fa-dot-circle-o"></i>        
-                              <a href="#">Database configuration</a><br>                          
-                              <div class="progress runningprogress">
-                                 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="" data-original-title="25%"></div>
-                              </div>
-                           </div>
-                           <div class="runnigwork">
-                              <span class="label-warning label label-default pull-right">progressing</span>
-                              <i class="fa fa-dot-circle-o"></i>        
-                              <a href="#">Design tool</a><br>                          
-                              <div class="progress runningprogress">
-                                 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="" data-original-title="15%"></div>
-                              </div>
-                           </div>
-                           <div class="runnigwork">
-                              <span class="label-success label label-default pull-right">progressing</span>
-                              <i class="fa fa-dot-circle-o"></i>        
-                              <a href="#">Internet configuration</a><br>                          
-                              <div class="progress runningprogress">
-                                 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="" data-original-title="45%"></div>
-                              </div>
-                           </div>
-                           <div class="runnigwork">
-                              <span class="label-info label label-default pull-right">progressing</span>
-                              <i class="fa fa-dot-circle-o"></i>        
-                              <a href="#">Banner completation</a><br>                          
-                              <div class="progress runningprogress">
-                                 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="" data-original-title="75%"></div>
-                              </div>
-                           </div>
-                           <div class="runnigwork">
-                              <span class="label-success label label-default pull-right">Success</span>
-                              <i class="fa fa-dot-circle-o"></i>        
-                              <a href="#">IT Solution</a><br>                          
-                              <div class="progress runningprogress">
-                                 <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="" data-original-title="50%"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                     <div class="panel panel-bd lobidisable">
-                        <div class="panel-heading">
-                           <div class="panel-title">
-                              <h4>Pending Works</h4>
-                           </div>
-                        </div>
-                        <div class="panel-body">
-                           <div class="Pendingwork">
-                              <span class="label-warning label label-default pull-right">progressing</span>
-                              <i class="fa fa-ban"></i>
-                              <a href="#">Database tools</a>                          
-                              <div class="upworkdate">
-                                 <p>Jul 25, 2017 for Alimul Alrazy</p>
-                              </div>
-                           </div>
-                           <div class="Pendingwork">
-                              <span class="label-success label label-default pull-right">success</span>
-                              <i class="fa fa-ban"></i>
-                              <a href="#">Cabels</a>                          
-                              <div class="upworkdate">
-                                 <p>Jul 25, 2017 for Alimul</p>
-                              </div>
-                           </div>
-                           <div class="Pendingwork">
-                              <span class="label-danger label label-default pull-right">Failed</span>
-                              <i class="fa fa-ban"></i>
-                              <a href="#">Technologycal tools</a>                          
-                              <div class="upworkdate">
-                                 <p>Feb 25, 2017 for Alrazy</p>
-                              </div>
-                           </div>
-                           <div class="Pendingwork">
-                              <span class="label-warning label label-default pull-right">progressing</span>
-                              <i class="fa fa-ban"></i>
-                              <a href="#">Transaction</a>                          
-                              <div class="upworkdate">
-                                 <p>apr 25, 2017 for Mahfuz</p>
-                              </div>
-                           </div>
-                           <div class="Pendingwork">
-                              <span class="label-success label label-default pull-right">success</span>
-                              <i class="fa fa-ban"></i>
-                              <a href="#">Training tools</a>                          
-                              <div class="upworkdate">
-                                 <p>jun 25, 2017 for Alrazy</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                     <div class="panel panel-bd lobidisable">
-                        <div class="panel-heading">
-                           <div class="panel-title">
-                              <h4>Works Deadlines</h4>
-                           </div>
-                        </div>
-                        <div class="panel-body">
-                           <div class="Workslist">
-                              <div class="worklistdate">
-                                 <table class="table table-hover">
-                                    <thead>
-                                       <tr>
-                                          <th>Task Name</th>
-                                          <th>End Deadlines</th>
-                                       </tr>
-                                    </thead>
-                                    <tbody>
-                                       <tr class="info">
-                                          <th scope="row">Alrazy</th>
-                                          <td>Feb 25,2017</td>
-                                       </tr>
-                                       <tr>
-                                          <th scope="row">Jahir</th>
-                                          <td>jun 05,2017</td>
-                                       </tr>
-                                       <tr>
-                                          <th scope="row">Sayeed</th>
-                                          <td>Feb 05,2017</td>
-                                       </tr>
-                                       <tr>
-                                          <th scope="row">Shipon</th>
-                                          <td>jun 25,2017</td>
-                                       </tr>
-                                       <tr>
-                                          <th scope="row">Rafi</th>
-                                          <td>Jul 15,2017</td>
-                                       </tr>
-                                    </tbody>
-                                 </table>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                     <div class="panel panel-bd lobidisable">
-                        <div class="panel-heading">
-                           <div class="panel-title">
-                              <h4>Works Announcements</h4>
-                           </div>
-                        </div>
-                        <div class="panel-body">
-                           <div class="Workslist">
-                              <div class="worklistdate">
-                                 <table class="table table-hover">
-                                    <thead>
-                                       <tr>
-                                          <th>Works Type</th>
-                                          <th>Name Of Worker</th>
-                                       </tr>
-                                    </thead>
-                                    <tbody>
-                                       <tr class="info">
-                                          <td>Web Design</td>
-                                          <td>Jr. Developer Alrazy</td>
-                                       </tr>
-                                       <tr>
-                                          <td>Networking</td>
-                                          <td>Jr. Developer Jahir</td>
-                                       </tr>
-                                       <tr>
-                                          <td>Megento</td>
-                                          <td>Jr. Developer Sayeed</td>
-                                       </tr>
-                                       <tr>
-                                          <td>Php,Laravel</td>
-                                          <td>Jr. Developer Muhim</td>
-                                       </tr>
-                                       <tr>
-                                          <td>Html,css</td>
-                                          <td>Frontend Developer Rafi</td>
-                                       </tr>
-                                    </tbody>
-                                 </table>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                     <div class="panel panel-bd lobidisable">
-                        <div class="panel-heading">
-                           <div class="panel-title">
-                              <h4>Notice Board</h4>
-                           </div>
-                        </div>
-                        <div class="panel-body">
-                           <div class="Workslist">
-                              <div class="worklistdate">
-                                 <table class="table table-hover">
-                                    <thead>
-                                       <tr>
-                                          <th>Notice</th>
-                                          <th>Published By</th>
-                                          <th>Date Added</th>
-                                       </tr>
-                                    </thead>
-                                    <tbody>
-                                       <tr class="info">
-                                          <td>new notice</td>
-                                          <td>Mr. Alrazy</td>
-                                          <td>20th April 2017</td>
-                                       </tr>
-                                       <tr>
-                                          <td>Urgent notice</td>
-                                          <td>Mr. Alrazy</td>
-                                          <td>20th june 2017</td>
-                                       </tr>
-                                       <tr>
-                                          <td>Urgent notice</td>
-                                          <td>Mr. Jahir</td>
-                                          <td>26th june 2017</td>
-                                       </tr>
-                                       <tr>
-                                          <td>Urgent notice</td>
-                                          <td>Mr. leo</td>
-                                          <td>3rd june 2017</td>
-                                       </tr>
-                                       <tr>
-                                          <td>Notice</td>
-                                          <td>Mr. Karim</td>
-                                          <td>3rd July 2017</td>
-                                       </tr>
-                                    </tbody>
-                                 </table>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <!-- Barchart -->
-                  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                     <div class="panel panel-bd lobidisable">
-                        <div class="panel-heading">
-                           <div class="panel-title">
-                              <h4>This Year Earnings & Expenses(Bar chart)</h4>
-                           </div>
-                        </div>
-                        <div class="panel-body">
-                           <canvas id="barChart" height="150"></canvas>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- bar chart -->
-                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                     <div class="panel panel-bd lobidisable">
-                        <div class="panel-heading">
-                           <div class="panel-title">
-                              <h4>Weekly Earnings & Expenses</h4>
-                           </div>
-                        </div>
-                        <div class="panel-body">
-                           <canvas id="singelBarChart" height="323"></canvas>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- /.row -->
-               <div class="row">
-                  <div class="col-xs-12 col-sm-8">
+                  <div class="col-sm-12">
                      <div class="panel panel-bd lobidrag">
                         <div class="panel-heading">
-                           <div class="panel-title">
-                              <h4>Google Map</h4>
+                           <div class="btn-group buttonexport">
+                              <a href="#">
+                                 <h4>payment</h4>
+                              </a>
                            </div>
                         </div>
                         <div class="panel-body">
-                           <div class="google-maps">
-                              <iframe src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=15+Springfield+Way,+Hythe,+CT21+5SH&amp;aq=t&amp;sll=52.8382,-2.327815&amp;sspn=8.047465,13.666992&amp;ie=UTF8&amp;hq=&amp;hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&amp;t=m&amp;z=14&amp;ll=51.077429,1.121722&amp;output=embed"></iframe>
+                        <!-- Plugin content:powerpoint,txt,pdf,png,word,xl -->
+                           <div class="btn-group">
+                              <button class="btn btn-exp btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> Export Table Data</button>
+                              <ul class="dropdown-menu exp-drop" role="menu">
+                                 <li>
+                                    <a href="#" onclick="$('#dataTableExample1').tableExport({type:'json',escape:'false'});"> 
+                                    <img src="../FileAndPlugin/dist/img/json.png" width="24" alt="logo"> JSON</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" onclick="$('#dataTableExample1').tableExport({type:'json',escape:'false',ignoreColumn:'[2,3]'});">
+                                    <img src="../FileAndPlugin/dist/img/json.png" width="24" alt="logo"> JSON (ignoreColumn)</a>
+                                 </li>
+                                 <li><a href="#" onclick="$('#dataTableExample1').tableExport({type:'json',escape:'true'});">
+                                    <img src="../FileAndPlugin/dist/img/json.png" width="24" alt="logo"> JSON (with Escape)</a>
+                                 </li>
+                                 <li class="divider"></li>
+                                 <li><a href="#" onclick="$('#dataTableExample1').tableExport({type:'xml',escape:'false'});">
+                                    <img src="../FileAndPlugin/dist/img/xml.png" width="24" alt="logo"> XML</a>
+                                 </li>
+                                 <li><a href="#" onclick="$('#dataTableExample1').tableExport({type:'sql'});"> 
+                                    <img src="../FileAndPlugin/dist/img/sql.png" width="24" alt="logo"> SQL</a>
+                                 </li>
+                                 <li class="divider"></li>
+                                 <li>
+                                    <a href="#" onclick="$('#dataTableExample1').tableExport({type:'csv',escape:'false'});"> 
+                                    <img src="../FileAndPlugin/dist/img/csv.png" width="24" alt="logo"> CSV</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" onclick="$('#dataTableExample1').tableExport({type:'txt',escape:'false'});"> 
+                                    <img src="../FileAndPlugin/dist/img/txt.png" width="24" alt="logo"> TXT</a>
+                                 </li>
+                                 <li class="divider"></li>
+                                 <li>
+                                    <a href="#" onclick="$('#dataTableExample1').tableExport({type:'excel',escape:'false'});"> 
+                                    <img src="../FileAndPlugin/dist/img/xls.png" width="24" alt="logo"> XLS</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" onclick="$('#dataTableExample1').tableExport({type:'doc',escape:'false'});">
+                                    <img src="../FileAndPlugin/dist/img/word.png" width="24" alt="logo"> Word</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" onclick="$('#dataTableExample1').tableExport({type:'powerpoint',escape:'false'});"> 
+                                    <img src="../FileAndPlugin/dist/img/ppt.png" width="24" alt="logo"> PowerPoint</a>
+                                 </li>
+                                 <li class="divider"></li>
+                                 <li>
+                                    <a href="#" onclick="$('#dataTableExample1').tableExport({type:'png',escape:'false'});"> 
+                                    <img src="../FileAndPlugin/dist/img/png.png" width="24" alt="logo"> PNG</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" onclick="$('#dataTableExample1').tableExport({type:'pdf',pdfFontSize:'7',escape:'false'});"> 
+                                    <img src="../FileAndPlugin/dist/img/pdf.png" width="24" alt="logo"> PDF</a>
+                                 </li>
+                              </ul>
                            </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-4">
-                     <div class="panel panel-bd lobidrag">
-                        <div class="panel-heading">
-                           <div class="panel-title">
-                              <h4>Calender</h4>
-                           </div>
-                        </div>
-                        <!-- Monthly calender widget -->
-                        <div class="panel panel-bd">
-                           <div class="panel-body">
-                              <div class="monthly_calender">
-                                 <div class="monthly" id="m_calendar"></div>
-                              </div>
+                           <!-- ./Plugin content:powerpoint,txt,pdf,png,word,xl -->
+                           <div class="table-responsive">
+                              <table id="dataTableExample1" class="table table-bordered table-striped table-hover">
+                                 <thead>
+                                    <tr class="info">
+                                       <th>Invoices No.</th>
+                                       <th>Date</th>
+                                       <th>Account</th>
+                                       <th>Amount</th>
+                                       <th>Transaction Id</th>
+                                       <th>Credit</th>
+                                       <th>Balance</th>
+                                       <th>Action</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>INV 1595</td>
+                                       <td>05/06/2017</td>
+                                       <td>Eileen Gusikowski</td>
+                                       <td>$ 1,658.00</td>
+                                       <td>TRN 1595</td>
+                                       <td>$ 1,865.00</td>
+                                       <td>$ 1,445.00</td>
+                                       <td>
+                                          <button type="button" class="btn btn-add btn-sm" data-toggle="modal" data-target="#customer1"><i class="fa fa-pencil"></i></button>
+                                          <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#customer2"><i class="fa fa-trash-o"></i> </button>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>INV 654</td>
+                                       <td>05/01/2017</td>
+                                       <td>Elen walker</td>
+                                       <td>$ 1,321.00</td>
+                                       <td>TRN 1654</td>
+                                       <td>$ 1,351.00</td>
+                                       <td>$ 1,974.00</td>
+                                       <td>
+                                          <button type="button" class="btn btn-add btn-sm" data-toggle="modal" data-target="#customer1"><i class="fa fa-pencil"></i></button>
+                                          <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#customer2"><i class="fa fa-trash-o"></i> </button>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>INV 642</td>
+                                       <td>05/09/2017</td>
+                                       <td>joe alan</td>
+                                       <td>$ 1,135.00</td>
+                                       <td>TRN 654</td>
+                                       <td>$ 1,351.00</td>
+                                       <td>$ 1,465.00</td>
+                                       <td>
+                                          <button type="button" class="btn btn-add btn-sm" data-toggle="modal" data-target="#customer1"><i class="fa fa-pencil"></i></button>
+                                          <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#customer2"><i class="fa fa-trash-o"></i> </button>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>INV 945</td>
+                                       <td>05/03/2017</td>
+                                       <td>joe Hart</td>
+                                       <td>$ 1,545.00</td>
+                                       <td>TRN 231</td>
+                                       <td>$ 1,654.00</td>
+                                       <td>$ 1,987.00</td>
+                                       <td>
+                                          <button type="button" class="btn btn-add btn-sm" data-toggle="modal" data-target="#customer1"><i class="fa fa-pencil"></i></button>
+                                          <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#customer2"><i class="fa fa-trash-o"></i> </button>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
+               <!-- update Modal1 -->
+               <div class="modal fade" id="customer1" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header modal-header-primary">
+                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                           <h3><i class="fa fa-user m-r-5"></i> Update Payments</h3>
+                        </div>
+                        <div class="modal-body">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <form class="form-horizontal">
+                                    <fieldset>
+                                       <!-- Text input-->
+                                       <div class="col-md-4 form-group">
+                                          <label class="control-label">Date</label>
+                                          <input type="text" placeholder="Date" class="form-control">
+                                       </div>
+                                       <!-- Text input-->
+                                       <div class="col-md-4 form-group">
+                                          <label class="control-label">Account</label>
+                                          <input type="text" placeholder="Account" class="form-control">
+                                       </div>
+                                       <!-- Text input-->
+                                       <div class="col-md-4 form-group">
+                                          <label class="control-label">Amount</label>
+                                          <input type="number" placeholder="Amount" class="form-control">
+                                       </div>
+                                       <div class="col-md-4 form-group">
+                                          <label class="control-label">Transaction Id</label>
+                                          <input type="text" placeholder="Transaction Id" class="form-control">
+                                       </div>
+                                       <div class="col-md-4 form-group">
+                                          <label class="control-label">Credit</label>
+                                          <input type="text" placeholder="Credit" class="form-control">
+                                       </div>
+                                       <div class="col-md-4 form-group">
+                                          <label class="control-label">Balance</label>
+                                          <input type="text" placeholder="Balance" class="form-control">
+                                       </div>
+                                       <div class="col-md-12 form-group user-form-group">
+                                          <div class="pull-right">
+                                             <button type="button" class="btn btn-danger btn-sm">Cancel</button>
+                                             <button type="submit" class="btn btn-success btn-sm">Save</button>
+                                          </div>
+                                       </div>
+                                    </fieldset>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                     <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+               </div>
+               <!-- /.modal -->
+               <!-- Modal -->   
+               <!-- Customer Modal2 -->
+               <div class="modal fade" id="customer2" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header modal-header-primary">
+                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                           <h3><i class="fa fa-user m-r-5"></i> Delete Payment</h3>
+                        </div>
+                        <div class="modal-body">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <form class="form-horizontal">
+                                    <fieldset>
+                                       <div class="col-md-12 form-group user-form-group">
+                                          <label class="control-label">Delete Payment</label>
+                                          <div class="pull-right">
+                                             <button type="button" class="btn btn-danger btn-sm">NO</button>
+                                             <button type="submit" class="btn btn-success btn-sm">YES</button>
+                                          </div>
+                                       </div>
+                                    </fieldset>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Close</button>
+                        </div>
+                     </div>
+                     <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+               </div>
+               <!-- /.modal -->
             </section>
             <!-- /.content -->
          </div>
          <!-- /.content-wrapper -->
          <footer class="main-footer">
-            <strong>Copyright &copy; 2016-2017 <a href="#">Thememinister</a>.</strong> All rights reserved.
+            <strong>Copyright &copy; 2016-2017 <a href="#">thememinister</a>.</strong> All rights reserved.
          </footer>
       </div>
-      <!-- /.wrapper -->
+      <!-- ./wrapper -->
       <!-- Start Core Plugins
          =====================================================================-->
       <!-- jQuery -->
@@ -1054,24 +951,22 @@
       <script src="../FileAndPlugin/plugins/lobipanel/lobipanel.min.js" type="text/javascript"></script>
       <!-- Pace js -->
       <script src="../FileAndPlugin/plugins/pace/pace.min.js" type="text/javascript"></script>
+      <!-- table-export js -->
+      <script src="../FileAndPlugin/plugins/table-export/tableExport.js" type="text/javascript"></script>
+      <script src="../FileAndPlugin/plugins/table-export/jquery.base64.js" type="text/javascript"></script>
+      <script src="../FileAndPlugin/plugins/table-export/html2canvas.js" type="text/javascript"></script>
+      <script src="../FileAndPlugin/plugins/table-export/sprintf.js" type="text/javascript"></script>
+      <script src="../FileAndPlugin/plugins/table-export/jspdf.js" type="text/javascript"></script>
+      <script src="../FileAndPlugin/plugins/table-export/base64.js" type="text/javascript"></script>
+      <!-- dataTables js -->
+      <script src="../FileAndPlugin/plugins/datatables/dataTables.min.js" type="text/javascript"></script>
       <!-- SlimScroll -->
-      <script src="../FileAndPlugin/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript">    </script>
+      <script src="../FileAndPlugin/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
       <!-- FastClick -->
       <script src="../FileAndPlugin/plugins/fastclick/fastclick.min.js" type="text/javascript"></script>
       <!-- CRMadmin frame -->
       <script src="../FileAndPlugin/dist/js/custom.js" type="text/javascript"></script>
       <!-- End Core Plugins
-         =====================================================================-->
-      <!-- Start Page Lavel Plugins
-         =====================================================================-->
-      <!-- ChartJs JavaScript -->
-      <script src="../FileAndPlugin/plugins/chartJs/Chart.min.js" type="text/javascript"></script>
-      <!-- Counter js -->
-      <script src="../FileAndPlugin/plugins/counterup/waypoints.js" type="text/javascript"></script>
-      <script src="../FileAndPlugin/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
-      <!-- Monthly js -->
-      <script src="../FileAndPlugin/plugins/monthly/monthly.js" type="text/javascript"></script>
-      <!-- End Page Lavel Plugins
          =====================================================================-->
       <!-- Start Theme label Script
          =====================================================================-->
@@ -1079,88 +974,8 @@
       <script src="../FileAndPlugin/dist/js/dashboard.js" type="text/javascript"></script>
       <!-- End Theme label Script
          =====================================================================-->
-      <script>
-         function dash() {
-         // single bar chart
-         var ctx = document.getElementById("singelBarChart");
-         var myChart = new Chart(ctx, {
-         type: 'bar',
-         data: {
-         labels: ["Sun", "Mon", "Tu", "Wed", "Th", "Fri", "Sat"],
-         datasets: [
-         {
-         label: "My First dataset",
-         data: [40, 55, 75, 81, 56, 55, 40],
-         borderColor: "rgba(0, 150, 136, 0.8)",
-         width: "1",
-         borderWidth: "0",
-         backgroundColor: "rgba(0, 150, 136, 0.8)"
-         }
-         ]
-         },
-         options: {
-         scales: {
-         yAxes: [{
-             ticks: {
-                 beginAtZero: true
-             }
-         }]
-         }
-         }
-         });
-               //monthly calender
-               $('#m_calendar').monthly({
-                 mode: 'event',
-                 //jsonUrl: 'events.json',
-                 //dataType: 'json'
-                 xmlUrl: 'events.xml'
-             });
-         
-         //bar chart
-         var ctx = document.getElementById("barChart");
-         var myChart = new Chart(ctx, {
-         type: 'bar',
-         data: {
-         labels: ["January", "February", "March", "April", "May", "June", "July", "august", "september","october", "Nobemver", "December"],
-         datasets: [
-         {
-         label: "My First dataset",
-         data: [65, 59, 80, 81, 56, 55, 40, 65, 59, 80, 81, 56],
-         borderColor: "rgba(0, 150, 136, 0.8)",
-         width: "1",
-         borderWidth: "0",
-         backgroundColor: "rgba(0, 150, 136, 0.8)"
-         },
-         {
-         label: "My Second dataset",
-         data: [28, 48, 40, 19, 86, 27, 90, 28, 48, 40, 19, 86],
-         borderColor: "rgba(51, 51, 51, 0.55)",
-         width: "1",
-         borderWidth: "0",
-         backgroundColor: "rgba(51, 51, 51, 0.55)"
-         }
-         ]
-         },
-         options: {
-         scales: {
-         yAxes: [{
-             ticks: {
-                 beginAtZero: true
-             }
-         }]
-         }
-         }
-         });
-             //counter
-             $('.count-number').counterUp({
-                 delay: 10,
-                 time: 5000
-             });
-         }
-         dash();         
-      </script>
    </body>
 
-<!-- Mirrored from crm.thememinister.com/crmAdmin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Aug 2018 08:36:38 GMT -->
+<!-- Mirrored from crm.thememinister.com/crmAdmin/payment.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Aug 2018 08:38:11 GMT -->
 </html>
 
