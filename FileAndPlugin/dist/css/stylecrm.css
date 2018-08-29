@@ -4792,12 +4792,6 @@ table.text-center th {
 .redate {
     max-width: 97%;
 }
-@media (max-width: 831px) {
-    .row .Navbar ul{
-        margin-top: 40px;
-    }
-}
-
 /*customer component: custom button*/
 @media (max-width: 767px) {
  
@@ -4946,6 +4940,22 @@ body {
    color: white;
   
 
+  }
+
+  @media (max-width:424px){
+    .row .Navbar ul {
+        margin-top: -28px !important;
+    }
+    .row .Navbar .Ic {
+     font-size: 1.6em !important;
+    }
+    .row .Navbar ul li {
+        margin-left: 13px !important;
+    }
+    .row .Navbar ul li .Icon2 {
+        font-size: 1.5em !important;
+
+    }
   }
 
    .row .Navbar ul li .Icon2 {
@@ -5325,6 +5335,15 @@ position: relative;
  text-decoration: none;
  color: white;
 }
+#Page .Menu .HoverLeft{
+    transition: 0.2s ease-in-out; 
+
+    position: absolute;
+    right: 14px;
+    top: 20px;
+    margin-top: -7px;
+
+}
 
 #Page .Menu  .ul > li .UlDrop li{
 
@@ -5345,6 +5364,11 @@ position: relative;
 
 #Page .Menu ul li a{
     margin-left : 12px;
+    color:white;
+}
+#Page .Menu ul li a:hover{
+   
+    color:white;
 }
 .row .logo .header-img img {
     width: 200px !important;
@@ -5362,6 +5386,30 @@ position: relative;
     margin-left: 16px;
     margin-top: 10px;
 }
+
+@media only screen and (max-width: 767px) {
+    .row .Navbar {
+        margin-top: 59px;
+    }
+    .row .Navbar .Ic {
+        margin-left: 20px !important;
+
+}
+#Margin .row .Navbar ul {
+    margin-top: 0px ;
+}
+
+/* @media only screen and (max-width: 586) {
+    .row .Navbar {
+        margin-top: 59px;
+    }
+    .row .Navbar .Ic {
+        margin-left: 20px !important;
+
+}
+.row .Navbar ul {
+    margin-top: 0px;
+} */
 
 
 

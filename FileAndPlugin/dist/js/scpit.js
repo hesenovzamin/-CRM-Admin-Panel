@@ -86,7 +86,11 @@ $(".Left").click(function(){
 $(document).ready(function(){
   $(window).resize(function(){
     
-    
+    if(window.innerWidth<831 && window.innerWidth>767)
+    { 
+      $(".row .Navbar ul").css("margin-top","-40px");         
+    }
+    else{$(".row .Navbar ul").css("margin-top","0px");}
     if(window.innerWidth<767)
     { 
      if(Hide==true){

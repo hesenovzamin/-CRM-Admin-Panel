@@ -1,53 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
    
-<!-- Mirrored from crm.thememinister.com/crmAdmin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Aug 2018 08:35:49 GMT -->
 <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>CRM Admin Panel</title>
-      <!-- Favicon and touch icons -->
+  
       <link rel="shortcut icon" href="../FileAndPlugin/dist/img/ico/favicon.png" type="image/x-icon">
-      <!-- Start Global Mandatory Style
-         =====================================================================-->
-      <!-- jquery-ui css -->
       <link href="../FileAndPlugin/plugins/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
-      <!-- Bootstrap -->
       <link href="../FileAndPlugin/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-      <!-- Bootstrap rtl -->
-      <!--<link href="../FileAndPlugin/bootstrap-rtl/bootstrap-rtl.min.css" rel="stylesheet" type="text/css"/>-->
-      <!-- Lobipanel css -->
       <link href="../FileAndPlugin/plugins/lobipanel/lobipanel.min.css" rel="stylesheet" type="text/css"/>
-      <!-- Pace css -->
+ 
       <link href="../FileAndPlugin/plugins/pace/flash.css" rel="stylesheet" type="text/css"/>
-      <!-- Font Awesome -->
+    
       <link href="../FileAndPlugin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-      <!-- Pe-icon -->
+   
       <link href="../FileAndPlugin/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"/>
-      <!-- Themify icons -->
+
       <link href="../FileAndPlugin/themify-icons/themify-icons.css" rel="stylesheet" type="text/css"/>
-      <!-- End Global Mandatory Style
-         =====================================================================-->
-      <!-- Start page Label Plugins 
-         =====================================================================-->
-      <!-- Emojionearea -->
+
       <link href="../FileAndPlugin/plugins/emojionearea/emojionearea.min.css" rel="stylesheet" type="text/css"/>
-      <!-- Monthly css -->
+
       <link href="../FileAndPlugin/plugins/monthly/monthly.css" rel="stylesheet" type="text/css"/>
-      <!-- End page Label Plugins 
-         =====================================================================-->
-      <!-- Start Theme Layout Style
-         =====================================================================-->
-      <!-- Theme style -->
+
+
       <link href="../FileAndPlugin/dist/css/stylecrm.css" rel="stylesheet" type="text/css"/>
-      <!-- Theme style rtl -->
-      <!--<link href="../FileAndPlugin/dist/css/stylecrm-rtl.css" rel="stylesheet" type="text/css"/>-->
-      <!-- End Theme Layout Style
-         =====================================================================-->
+
    </head>
    <body class="hold-transition sidebar-mini">
-      <!--preloader-->
+  
       <div id="preloader">
          <div id="status"></div>
       </div>
@@ -62,7 +44,7 @@
             <div class="Navbar">
                   <i style="  margin-left: 265px;" class="Icon Ic Left fa fa-chevron-circle-left"></i>
                   <i style="  margin-left: 20px;" class="Icon Ic fa fa-search"></i>
-                  <ul>
+                  <ul id="Margin">
                         <li>
                               <i class="Shop Icon2 Icon22 fa fa-shopping-cart"></i>
                               <span style="background:#3a95e4;" class="count">4</span>
@@ -231,40 +213,22 @@
                         <a>Customers</a>
                         <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                         <ul class="UlDrop">
-                              <li>
-                                    <a href="">Add Customer</a>
-                              </li>
-                              <li>
-                                    <a>List</a>
-                              </li>
-                              <li>
-                                    <a>Groups</a>
-                              </li>
+                            <li><a href="add-customer.html">Add Customer</a></li>
+                            <li><a href="clist.html">List</a></li>
+                            <li><a href="group.html">Groups</a></li>
                         </ul>
                   </li>
                   <li class="Click">
                         <i class="MenuIcon fa fa-shopping-basket" aria-hidden="true"></i>
-                        <a>Transaction</a>
+                        <a href="#">Transaction</a>
                         <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                         <ul class="UlDrop">
-                              <li>
-                                    <a>New Deposit</a>
-                              </li>
-                              <li>
-                                    <a>New Expense</a>
-                              </li>
-                              <li>
-                                    <a>Transfer</a>
-                              </li>
-                              <li>
-                                    <a>View transaction</a>
-                              </li>
-                              <li>
-                                    <a>Balance Sheet</a>
-                              </li>
-                              <li>
-                                    <a>Transfer Report</a>
-                              </li>
+                            <li><a href="deposit.html">New Deposit</a></li>
+                            <li><a href="expense.html">New Expense</a></li>
+                            <li><a href="transfer.html">Transfer</a></li>
+                            <li><a href="view-tsaction.html">View transaction</a></li>
+                            <li><a href="balance.html">Balance Sheet</a></li>
+                            <li><a href="treport.html">Transfer Report</a></li>
 
                         </ul>
                   </li>
@@ -273,24 +237,14 @@
                         <a>Sales</a>
                         <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                         <ul class="UlDrop">
-                              <li>
-                                    <a>Invoieces</a>
-                              </li>
-                              <li>
-                                    <a>New Invoieces</a>
-                              </li>
-                              <li>
-                                    <a>Recurring Invoices</a>
-                              </li>
-                              <li>
-                                    <a>View transaction</a>
-                              </li>
-                              <li>
-                                    <a>Balance Sheet</a>
-                              </li>
-                              <li>
-                                    <a>Transfer Report</a>
-                              </li>
+                            <li><a href="invoice.html">Invoices</a></li>
+                            <li><a href="ninvoices.html">New Invoices</a></li>
+                            <li><a href="recurring.html">Recurring invoices</a></li>
+                            <li><a href="nrecurring.html">New Recurring invoices</a></li>
+                            <li><a href="quote.html">quotes</a></li>
+                            <li><a href="nquote.html">New quote</a></li>
+                            <li><a href="payment.html">Payments</a></li>
+                            <li><a href="taxeport.html">Tax Rates</a></li>
                         </ul>
                   </li>
                   <li class="Click">
@@ -298,9 +252,8 @@
                         <a>Task</a>
                         <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                         <ul class="UlDrop">
-                              <li>Add Customer</li>
-                              <li>List</li>
-                              <li>Groups</li>
+                            <li><a href="rtask.html">Running Task</a></li>
+                            <li><a href="atask.html">Archive Task</a></li>
                         </ul>
                   </li>
                   <li class="Click">
@@ -308,9 +261,9 @@
                         <a>Accounting</a>
                         <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                         <ul class="UlDrop">
-                              <li>Add Customer</li>
-                              <li>List</li>
-                              <li>Groups</li>
+                            <li><a href="cpayment.html">Client payment</a></li>
+                            <li><a href="emanage.html">Expense management</a></li>
+                            <li><a href="ecategory.html">Expense Category</a></li>
                         </ul>
                   </li>
                   <li class="Click">
@@ -318,9 +271,10 @@
                         <a>Report</a>
                         <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                         <ul class="UlDrop">
-                              <li>Add Customer</li>
-                              <li>List</li>
-                              <li>Groups</li>
+                            <li><a href="preport.html">Project Report</a></li>
+                            <li><a href="creport.html">Client Report</a></li>
+                            <li><a href="ereport.html">Expense Report</a></li>
+                            <li><a href="incomexp.html">Income expense comparesion</a></li>
                         </ul>
                   </li>
                   <li class="Click">
@@ -328,9 +282,9 @@
                         <a>Attendance</a>
                         <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                         <ul class="UlDrop">
-                              <li>Add Customer</li>
-                              <li>List</li>
-                              <li>Groups</li>
+                            <li><a href="thistory.html">Time History</a></li>
+                            <li><a href="timechange.html">Time Change Request</a></li>
+                            <li><a href="atreport.html">Attendance Report</a></li>
                         </ul>
                   </li>
                   <li class="Click">
@@ -338,9 +292,8 @@
                         <a>Recruitment</a>
                         <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                         <ul class="UlDrop">
-                              <li>Add Customer</li>
-                              <li>List</li>
-                              <li>Groups</li>
+                            <li><a href="jpost.html">Jobs Posted</a></li>
+                            <li><a href="japp.html">Jobs Application</a></li>
                         </ul>
                   </li>
                   <li class="Click">
@@ -348,9 +301,13 @@
                         <a>payroll</a>
                         <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                         <ul class="UlDrop">
-                              <li>Add Customer</li>
-                              <li>List</li>
-                              <li>Groups</li>
+                            <li><a href="salary.html">Salary Template</a></li>
+                            <li><a href="hourly.html">Hourly</a></li>
+                            <li><a href="managesal.html">Manage salary</a></li>
+                            <li><a href="empsallist.html">Employee salary list</a></li>
+                            <li><a href="mpayment.html">Make payment</a></li>
+                            <li><a href="generatepay.html">Generate payslip</a></li>
+                            <li><a href="paysum.html">Payroll summary</a></li>
                         </ul>
                   </li>
                   <li class="Click">
@@ -358,9 +315,9 @@
                         <a>Stock</a>
                         <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                         <ul class="UlDrop">
-                              <li>Add Customer</li>
-                              <li>List</li>
-                              <li>Groups</li>
+                            <li><a href="stockcat.html">Stock category</a></li>
+                            <li><a href="manstock.html">Manage Stock</a></li>
+                            <li><a href="astock.html">Assign stock</a></li>
                         </ul>
                   </li>
                   <li class="Click">
@@ -368,9 +325,11 @@
                         <a>Tickets</a>
                         <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                         <ul class="UlDrop">
-                              <li>Add Customer</li>
-                              <li>List</li>
-                              <li>Groups</li>
+                            <li><a href="ticanswer.html">Answered</a></li>
+                            <li><a href="ticopen.html">Open</a></li>
+                            <li><a href="iprocess.html">Inprocess</a></li>
+                            <li><a href="close.html">CLosed</a></li>
+                            <li><a href="allticket.html">All Tickets</a></li>
                         </ul>
                   </li>
                   <li class="Click">
@@ -378,54 +337,55 @@
                         <a>settings</a>
                         <i class="fa fa-angle-left HoverLeft" aria-hidden="true"></i>
                         <ul class="UlDrop">
-                              <li>Add Customer</li>
-                              <li>List</li>
-                              <li>Groups</li>
+                            <li><a href="gsetting.html">Genaral settings</a></li>
+                            <li><a href="stfsetting.html">Staff settings</a></li>
+                            <li><a href="emailsetting.html">Email settings</a></li>
+                            <li><a href="paysetting.html">Payment</a></li>
                         </ul>
                   </li>
                   <li>
                         <i class="MenuIcon fa fa-home" aria-hidden="true"></i>
-                        <a>Companies</a>
+                        <a href="company.html">Companies</a>
                   </li>
                   <li>
                         <i class="MenuIcon fa fa-stop-circle" aria-hidden="true"></i>
-                        <a>Public Holiday</a>
+                        <a href="holiday.html">Public Holiday</a>
                   </li>
                   <li>
-                        <i class="MenuIcon fa fa-user-circle" aria-hidden="true"></i>
-                        <a>User</a>
+                        <i href="user.html" class="MenuIcon fa fa-user-circle" aria-hidden="true"></i>
+                        <a href="user.html">User</a>
                   </li>
                   <li>
-                        <i class="MenuIcon fa fa-file-o" aria-hidden="true"></i>
-                        <a>Items</a>
+                        <i  class="MenuIcon fa fa-file-o" aria-hidden="true"></i>
+                        <a href="items.html">Items</a>
                   </li>
                   <li>
                         <i class="MenuIcon fa fa-tree" aria-hidden="true"></i>
-                        <a>Departments</a>
+                        <a href="department.html">Departments</a>
                   </li>
                   <li>
                         <i class="MenuIcon fa fa-file-text" aria-hidden="true"></i>
-                        <a>Documents</a>
+                        <a href="document.html">Documents</a>
                   </li>
                   <li>
                         <i class="MenuIcon fa fa-clock-o" aria-hidden="true"></i>
-                        <a>Training</a>
+                        <a  href="train.html">Training</a>
                   </li>
                   <li>
                         <i class="MenuIcon fa fa-calendar" aria-hidden="true"></i>
-                        <a>Caledder</a>
+                        <a href="calender.html">Caledder</a>
                   </li>
                   <li>
                         <i class="MenuIcon fa fa-file-text" aria-hidden="true"></i>
-                        <a>Notice Board</a>
+                        <a href="notice.html">Notice Board</a>
                   </li>
                   <li>
                         <i class="MenuIcon fa fa-envelope-o" aria-hidden="true"></i>
-                        <a>Message</a>
+                        <a href="message.html">Message</a>
                   </li>
                   <li>
                         <i class="MenuIcon fa fa-comment" aria-hidden="true"></i>
-                        <a>Notes</a>
+                        <a  href="note.html">Notes</a>
                   </li>
             </ul>
       </div>
