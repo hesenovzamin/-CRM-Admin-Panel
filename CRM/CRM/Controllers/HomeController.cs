@@ -13,8 +13,19 @@ namespace CRM.Controllers
         CRM_SYSTEMEntities db = new CRM_SYSTEMEntities();
         public ActionResult Index()
         {
-            
-            return View();
+            object Admin = Session["Admin"];
+            ViewModel model = new ViewModel();
+            int ActiveAdmins = 0;       
+            foreach (var item in model.Admins)
+            {
+                if (item.Online==true)
+                {
+
+                }
+            }
+            ViewBag.ActiveAdmin = ActiveAdmins;
+            model.Admins = db.Admins.ToList();
+            return View(model);
         }
     }
 }
