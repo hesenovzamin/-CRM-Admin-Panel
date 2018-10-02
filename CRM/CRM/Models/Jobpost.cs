@@ -17,7 +17,7 @@ namespace CRM.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Jobpost()
         {
-            this.JobsApplications = new HashSet<JobsApplication>();
+            this.JobsApplication = new HashSet<JobsApplication>();
         }
     
         public int Id { get; set; }
@@ -29,6 +29,6 @@ namespace CRM.Models
         public Nullable<bool> Status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<JobsApplication> JobsApplications { get; set; }
+        public virtual ICollection<JobsApplication> JobsApplication { get; set; }
     }
 }

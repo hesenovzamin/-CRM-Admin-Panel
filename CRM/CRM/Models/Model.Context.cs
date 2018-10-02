@@ -13,10 +13,10 @@ namespace CRM.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CRM_SYSTEMEntities : DbContext
+    public partial class CRMEntities : DbContext
     {
-        public CRM_SYSTEMEntities()
-            : base("name=CRM_SYSTEMEntities")
+        public CRMEntities()
+            : base("name=CRMEntities")
         {
         }
     
@@ -26,21 +26,20 @@ namespace CRM.Models
         }
     
         public virtual DbSet<C_Transaction> C_Transaction { get; set; }
-        public virtual DbSet<Admin> Admins { get; set; }
-        public virtual DbSet<Balan> Balans { get; set; }
-        public virtual DbSet<Bonservice> Bonservices { get; set; }
-        public virtual DbSet<Contact> Contacts { get; set; }
-        public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Admin> Admin { get; set; }
+        public virtual DbSet<Balans> Balans { get; set; }
+        public virtual DbSet<Bonservices> Bonservices { get; set; }
+        public virtual DbSet<Contacts> Contacts { get; set; }
+        public virtual DbSet<Customer> Customer { get; set; }
         public virtual DbSet<Customer_to_Serviceds> Customer_to_Serviceds { get; set; }
-        public virtual DbSet<Discount> Discounts { get; set; }
-        public virtual DbSet<Jobpost> Jobposts { get; set; }
-        public virtual DbSet<JobsApplication> JobsApplications { get; set; }
-        public virtual DbSet<Mesagge> Mesagges { get; set; }
-        public virtual DbSet<Order> Orders { get; set; }
-        public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<ProductCategory> ProductCategories { get; set; }
-        public virtual DbSet<Stoct> Stocts { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-        public virtual DbSet<Worker> Workers { get; set; }
+        public virtual DbSet<Discount> Discount { get; set; }
+        public virtual DbSet<Jobpost> Jobpost { get; set; }
+        public virtual DbSet<JobsApplication> JobsApplication { get; set; }
+        public virtual DbSet<Mesagge> Mesagge { get; set; }
+        public virtual DbSet<Orders> Orders { get; set; }
+        public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<ProductCategory> ProductCategory { get; set; }
+        public virtual DbSet<Stoct> Stoct { get; set; }
+        public virtual DbSet<Worker> Worker { get; set; }
     }
 }

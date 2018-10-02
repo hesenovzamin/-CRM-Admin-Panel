@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="CRMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name=" Transaction">
     <Key>
       <PropertyRef Name="Id" />
@@ -151,16 +151,6 @@
     <Property Name="Count" Type="int" Nullable="false" />
     <Property Name="Price" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="sysdiagrams">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-    <Property Name="principal_id" Type="int" Nullable="false" />
-    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="version" Type="int" />
-    <Property Name="definition" Type="varbinary(max)" />
-  </EntityType>
   <EntityType Name="Worker">
     <Key>
       <PropertyRef Name="Id" />
@@ -247,7 +237,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__JobsAppli__JobId__534D60F1">
+  <Association Name="FK__JobsAppli__JobId__59FA5E80">
     <End Role="Jobpost" Type="Self.Jobpost" Multiplicity="0..1" />
     <End Role="JobsApplication" Type="Self.JobsApplication" Multiplicity="*" />
     <ReferentialConstraint>
@@ -283,7 +273,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="ModelStoreContainer">
+  <EntityContainer Name="CRMModelStoreContainer">
     <EntitySet Name=" Transaction" EntityType="Self. Transaction" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Balans" EntityType="Self.Balans" Schema="dbo" store:Type="Tables" />
@@ -299,7 +289,6 @@
     <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ProductCategory" EntityType="Self.ProductCategory" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Stoct" EntityType="Self.Stoct" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Worker" EntityType="Self.Worker" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="Bonservices_fk0" Association="Self.Bonservices_fk0">
       <End Role="Product" EntitySet="Product" />
@@ -325,7 +314,7 @@
       <End Role="Product" EntitySet="Product" />
       <End Role="Discount" EntitySet="Discount" />
     </AssociationSet>
-    <AssociationSet Name="FK__JobsAppli__JobId__534D60F1" Association="Self.FK__JobsAppli__JobId__534D60F1">
+    <AssociationSet Name="FK__JobsAppli__JobId__59FA5E80" Association="Self.FK__JobsAppli__JobId__59FA5E80">
       <End Role="Jobpost" EntitySet="Jobpost" />
       <End Role="JobsApplication" EntitySet="JobsApplication" />
     </AssociationSet>

@@ -17,7 +17,7 @@ namespace CRM.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Admin()
         {
-            this.Mesagges = new HashSet<Mesagge>();
+            this.Mesagge = new HashSet<Mesagge>();
         }
     
         public int Id { get; set; }
@@ -31,6 +31,6 @@ namespace CRM.Models
         public string adminytpe { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Mesagge> Mesagges { get; set; }
+        public virtual ICollection<Mesagge> Mesagge { get; set; }
     }
 }

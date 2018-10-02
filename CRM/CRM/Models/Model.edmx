@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="CRMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name=" Transaction">
           <Key>
             <PropertyRef Name="Id" />
@@ -156,16 +156,6 @@
           <Property Name="Count" Type="int" Nullable="false" />
           <Property Name="Price" Type="int" Nullable="false" />
         </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="version" Type="int" />
-          <Property Name="definition" Type="varbinary(max)" />
-        </EntityType>
         <EntityType Name="Worker">
           <Key>
             <PropertyRef Name="Id" />
@@ -252,7 +242,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__JobsAppli__JobId__534D60F1">
+        <Association Name="FK__JobsAppli__JobId__59FA5E80">
           <End Role="Jobpost" Type="Self.Jobpost" Multiplicity="0..1" />
           <End Role="JobsApplication" Type="Self.JobsApplication" Multiplicity="*" />
           <ReferentialConstraint>
@@ -288,7 +278,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="ModelStoreContainer">
+        <EntityContainer Name="CRMModelStoreContainer">
           <EntitySet Name=" Transaction" EntityType="Self. Transaction" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Balans" EntityType="Self.Balans" Schema="dbo" store:Type="Tables" />
@@ -304,7 +294,6 @@
           <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ProductCategory" EntityType="Self.ProductCategory" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Stoct" EntityType="Self.Stoct" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Worker" EntityType="Self.Worker" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="Bonservices_fk0" Association="Self.Bonservices_fk0">
             <End Role="Product" EntitySet="Product" />
@@ -330,7 +319,7 @@
             <End Role="Product" EntitySet="Product" />
             <End Role="Discount" EntitySet="Discount" />
           </AssociationSet>
-          <AssociationSet Name="FK__JobsAppli__JobId__534D60F1" Association="Self.FK__JobsAppli__JobId__534D60F1">
+          <AssociationSet Name="FK__JobsAppli__JobId__59FA5E80" Association="Self.FK__JobsAppli__JobId__59FA5E80">
             <End Role="Jobpost" EntitySet="Jobpost" />
             <End Role="JobsApplication" EntitySet="JobsApplication" />
           </AssociationSet>
@@ -347,7 +336,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="CRMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="C_Transaction">
           <Key>
             <PropertyRef Name="Id" />
@@ -371,9 +360,9 @@
           <Property Name="LastOnlineDate" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="Online" Type="Boolean" Nullable="false" />
           <Property Name="adminytpe" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Mesagges" Relationship="Self.Mesagge_fk0" FromRole="Admin" ToRole="Mesagge" />
+          <NavigationProperty Name="Mesagge" Relationship="Self.Mesagge_fk0" FromRole="Admin" ToRole="Mesagge" />
         </EntityType>
-        <EntityType Name="Balan">
+        <EntityType Name="Balans">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -381,7 +370,7 @@
           <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Price" Type="Int32" Nullable="false" />
         </EntityType>
-        <EntityType Name="Bonservice">
+        <EntityType Name="Bonservices">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -392,7 +381,7 @@
           <NavigationProperty Name="Product" Relationship="Self.Bonservices_fk0" FromRole="Bonservices" ToRole="Product" />
           <NavigationProperty Name="Worker" Relationship="Self.Bonservices_fk1" FromRole="Bonservices" ToRole="Worker" />
         </EntityType>
-        <EntityType Name="Contact">
+        <EntityType Name="Contacts">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -414,7 +403,7 @@
           <Property Name="DateofBirth" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="Online" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Customer_to_Serviceds" Relationship="Self.Customer_to_Serviceds_fk0" FromRole="Customer" ToRole="Customer_to_Serviceds" />
-          <NavigationProperty Name="Discounts" Relationship="Self.Discount_fk0" FromRole="Customer" ToRole="Discount" />
+          <NavigationProperty Name="Discount" Relationship="Self.Discount_fk0" FromRole="Customer" ToRole="Discount" />
         </EntityType>
         <EntityType Name="Customer_to_Serviceds">
           <Key>
@@ -450,7 +439,7 @@
           <Property Name="StartDate" Type="DateTime" Precision="0" />
           <Property Name="Lastdate" Type="DateTime" Precision="0" />
           <Property Name="Status" Type="Boolean" />
-          <NavigationProperty Name="JobsApplications" Relationship="Self.FK__JobsAppli__JobId__534D60F1" FromRole="Jobpost" ToRole="JobsApplication" />
+          <NavigationProperty Name="JobsApplication" Relationship="Self.FK__JobsAppli__JobId__59FA5E80" FromRole="Jobpost" ToRole="JobsApplication" />
         </EntityType>
         <EntityType Name="JobsApplication">
           <Key>
@@ -463,7 +452,7 @@
           <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="ApplyOn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Status" Type="Boolean" />
-          <NavigationProperty Name="Jobpost" Relationship="Self.FK__JobsAppli__JobId__534D60F1" FromRole="JobsApplication" ToRole="Jobpost" />
+          <NavigationProperty Name="Jobpost" Relationship="Self.FK__JobsAppli__JobId__59FA5E80" FromRole="JobsApplication" ToRole="Jobpost" />
         </EntityType>
         <EntityType Name="Mesagge">
           <Key>
@@ -475,7 +464,7 @@
           <Property Name="AcceptId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Admin" Relationship="Self.Mesagge_fk0" FromRole="Mesagge" ToRole="Admin" />
         </EntityType>
-        <EntityType Name="Order">
+        <EntityType Name="Orders">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -496,7 +485,7 @@
           <Property Name="Price" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Bonservices" Relationship="Self.Bonservices_fk0" FromRole="Product" ToRole="Bonservices" />
           <NavigationProperty Name="Customer_to_Serviceds" Relationship="Self.Customer_to_Serviceds_fk1" FromRole="Product" ToRole="Customer_to_Serviceds" />
-          <NavigationProperty Name="Discounts" Relationship="Self.Discount_fk1" FromRole="Product" ToRole="Discount" />
+          <NavigationProperty Name="Discount" Relationship="Self.Discount_fk1" FromRole="Product" ToRole="Discount" />
           <NavigationProperty Name="ProductCategory" Relationship="Self.Product_fk0" FromRole="Product" ToRole="ProductCategory" />
         </EntityType>
         <EntityType Name="ProductCategory">
@@ -505,7 +494,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Products" Relationship="Self.Product_fk0" FromRole="ProductCategory" ToRole="Product" />
+          <NavigationProperty Name="Product" Relationship="Self.Product_fk0" FromRole="ProductCategory" ToRole="Product" />
         </EntityType>
         <EntityType Name="Stoct">
           <Key>
@@ -515,16 +504,6 @@
           <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Count" Type="Int32" Nullable="false" />
           <Property Name="Price" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="sysdiagram">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="principal_id" Type="Int32" Nullable="false" />
-          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="Int32" />
-          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="Worker">
           <Key>
@@ -555,7 +534,7 @@
         </Association>
         <Association Name="Bonservices_fk0">
           <End Role="Product" Type="Self.Product" Multiplicity="1" />
-          <End Role="Bonservices" Type="Self.Bonservice" Multiplicity="*" />
+          <End Role="Bonservices" Type="Self.Bonservices" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Product">
               <PropertyRef Name="Id" />
@@ -567,7 +546,7 @@
         </Association>
         <Association Name="Bonservices_fk1">
           <End Role="Worker" Type="Self.Worker" Multiplicity="1" />
-          <End Role="Bonservices" Type="Self.Bonservice" Multiplicity="*" />
+          <End Role="Bonservices" Type="Self.Bonservices" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Worker">
               <PropertyRef Name="Id" />
@@ -625,7 +604,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__JobsAppli__JobId__534D60F1">
+        <Association Name="FK__JobsAppli__JobId__59FA5E80">
           <End Role="Jobpost" Type="Self.Jobpost" Multiplicity="0..1" />
           <End Role="JobsApplication" Type="Self.JobsApplication" Multiplicity="*" />
           <ReferentialConstraint>
@@ -649,59 +628,58 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CRM_SYSTEMEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CRMEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="C_Transaction" EntityType="Self.C_Transaction" />
-          <EntitySet Name="Admins" EntityType="Self.Admin" />
-          <EntitySet Name="Balans" EntityType="Self.Balan" />
-          <EntitySet Name="Bonservices" EntityType="Self.Bonservice" />
-          <EntitySet Name="Contacts" EntityType="Self.Contact" />
-          <EntitySet Name="Customers" EntityType="Self.Customer" />
+          <EntitySet Name="Admin" EntityType="Self.Admin" />
+          <EntitySet Name="Balans" EntityType="Self.Balans" />
+          <EntitySet Name="Bonservices" EntityType="Self.Bonservices" />
+          <EntitySet Name="Contacts" EntityType="Self.Contacts" />
+          <EntitySet Name="Customer" EntityType="Self.Customer" />
           <EntitySet Name="Customer_to_Serviceds" EntityType="Self.Customer_to_Serviceds" />
-          <EntitySet Name="Discounts" EntityType="Self.Discount" />
-          <EntitySet Name="Jobposts" EntityType="Self.Jobpost" />
-          <EntitySet Name="JobsApplications" EntityType="Self.JobsApplication" />
-          <EntitySet Name="Mesagges" EntityType="Self.Mesagge" />
-          <EntitySet Name="Orders" EntityType="Self.Order" />
-          <EntitySet Name="Products" EntityType="Self.Product" />
-          <EntitySet Name="ProductCategories" EntityType="Self.ProductCategory" />
-          <EntitySet Name="Stocts" EntityType="Self.Stoct" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
-          <EntitySet Name="Workers" EntityType="Self.Worker" />
+          <EntitySet Name="Discount" EntityType="Self.Discount" />
+          <EntitySet Name="Jobpost" EntityType="Self.Jobpost" />
+          <EntitySet Name="JobsApplication" EntityType="Self.JobsApplication" />
+          <EntitySet Name="Mesagge" EntityType="Self.Mesagge" />
+          <EntitySet Name="Orders" EntityType="Self.Orders" />
+          <EntitySet Name="Product" EntityType="Self.Product" />
+          <EntitySet Name="ProductCategory" EntityType="Self.ProductCategory" />
+          <EntitySet Name="Stoct" EntityType="Self.Stoct" />
+          <EntitySet Name="Worker" EntityType="Self.Worker" />
           <AssociationSet Name="Mesagge_fk0" Association="Self.Mesagge_fk0">
-            <End Role="Admin" EntitySet="Admins" />
-            <End Role="Mesagge" EntitySet="Mesagges" />
+            <End Role="Admin" EntitySet="Admin" />
+            <End Role="Mesagge" EntitySet="Mesagge" />
           </AssociationSet>
           <AssociationSet Name="Bonservices_fk0" Association="Self.Bonservices_fk0">
-            <End Role="Product" EntitySet="Products" />
+            <End Role="Product" EntitySet="Product" />
             <End Role="Bonservices" EntitySet="Bonservices" />
           </AssociationSet>
           <AssociationSet Name="Bonservices_fk1" Association="Self.Bonservices_fk1">
-            <End Role="Worker" EntitySet="Workers" />
+            <End Role="Worker" EntitySet="Worker" />
             <End Role="Bonservices" EntitySet="Bonservices" />
           </AssociationSet>
           <AssociationSet Name="Customer_to_Serviceds_fk0" Association="Self.Customer_to_Serviceds_fk0">
-            <End Role="Customer" EntitySet="Customers" />
+            <End Role="Customer" EntitySet="Customer" />
             <End Role="Customer_to_Serviceds" EntitySet="Customer_to_Serviceds" />
           </AssociationSet>
           <AssociationSet Name="Discount_fk0" Association="Self.Discount_fk0">
-            <End Role="Customer" EntitySet="Customers" />
-            <End Role="Discount" EntitySet="Discounts" />
+            <End Role="Customer" EntitySet="Customer" />
+            <End Role="Discount" EntitySet="Discount" />
           </AssociationSet>
           <AssociationSet Name="Customer_to_Serviceds_fk1" Association="Self.Customer_to_Serviceds_fk1">
-            <End Role="Product" EntitySet="Products" />
+            <End Role="Product" EntitySet="Product" />
             <End Role="Customer_to_Serviceds" EntitySet="Customer_to_Serviceds" />
           </AssociationSet>
           <AssociationSet Name="Discount_fk1" Association="Self.Discount_fk1">
-            <End Role="Product" EntitySet="Products" />
-            <End Role="Discount" EntitySet="Discounts" />
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Discount" EntitySet="Discount" />
           </AssociationSet>
-          <AssociationSet Name="FK__JobsAppli__JobId__534D60F1" Association="Self.FK__JobsAppli__JobId__534D60F1">
-            <End Role="Jobpost" EntitySet="Jobposts" />
-            <End Role="JobsApplication" EntitySet="JobsApplications" />
+          <AssociationSet Name="FK__JobsAppli__JobId__59FA5E80" Association="Self.FK__JobsAppli__JobId__59FA5E80">
+            <End Role="Jobpost" EntitySet="Jobpost" />
+            <End Role="JobsApplication" EntitySet="JobsApplication" />
           </AssociationSet>
           <AssociationSet Name="Product_fk0" Association="Self.Product_fk0">
-            <End Role="ProductCategory" EntitySet="ProductCategories" />
-            <End Role="Product" EntitySet="Products" />
+            <End Role="ProductCategory" EntitySet="ProductCategory" />
+            <End Role="Product" EntitySet="Product" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -709,9 +687,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="CRM_SYSTEMEntities">
+        <EntityContainerMapping StorageEntityContainer="CRMModelStoreContainer" CdmEntityContainer="CRMEntities">
           <EntitySetMapping Name="C_Transaction">
-            <EntityTypeMapping TypeName="Model.C_Transaction">
+            <EntityTypeMapping TypeName="CRMModel.C_Transaction">
               <MappingFragment StoreEntitySet=" Transaction">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
@@ -721,8 +699,8 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Admins">
-            <EntityTypeMapping TypeName="Model.Admin">
+          <EntitySetMapping Name="Admin">
+            <EntityTypeMapping TypeName="CRMModel.Admin">
               <MappingFragment StoreEntitySet="Admin">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -737,7 +715,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Balans">
-            <EntityTypeMapping TypeName="Model.Balan">
+            <EntityTypeMapping TypeName="CRMModel.Balans">
               <MappingFragment StoreEntitySet="Balans">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="ProductName" ColumnName="ProductName" />
@@ -746,7 +724,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Bonservices">
-            <EntityTypeMapping TypeName="Model.Bonservice">
+            <EntityTypeMapping TypeName="CRMModel.Bonservices">
               <MappingFragment StoreEntitySet="Bonservices">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="ProductId" ColumnName="ProductId" />
@@ -756,7 +734,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Contacts">
-            <EntityTypeMapping TypeName="Model.Contact">
+            <EntityTypeMapping TypeName="CRMModel.Contacts">
               <MappingFragment StoreEntitySet="Contacts">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
@@ -765,8 +743,8 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Customers">
-            <EntityTypeMapping TypeName="Model.Customer">
+          <EntitySetMapping Name="Customer">
+            <EntityTypeMapping TypeName="CRMModel.Customer">
               <MappingFragment StoreEntitySet="Customer">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -780,7 +758,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Customer_to_Serviceds">
-            <EntityTypeMapping TypeName="Model.Customer_to_Serviceds">
+            <EntityTypeMapping TypeName="CRMModel.Customer_to_Serviceds">
               <MappingFragment StoreEntitySet="Customer_to_Serviceds">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
@@ -790,8 +768,8 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Discounts">
-            <EntityTypeMapping TypeName="Model.Discount">
+          <EntitySetMapping Name="Discount">
+            <EntityTypeMapping TypeName="CRMModel.Discount">
               <MappingFragment StoreEntitySet="Discount">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
@@ -800,8 +778,8 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Jobposts">
-            <EntityTypeMapping TypeName="Model.Jobpost">
+          <EntitySetMapping Name="Jobpost">
+            <EntityTypeMapping TypeName="CRMModel.Jobpost">
               <MappingFragment StoreEntitySet="Jobpost">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
@@ -813,8 +791,8 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="JobsApplications">
-            <EntityTypeMapping TypeName="Model.JobsApplication">
+          <EntitySetMapping Name="JobsApplication">
+            <EntityTypeMapping TypeName="CRMModel.JobsApplication">
               <MappingFragment StoreEntitySet="JobsApplication">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="JobId" ColumnName="JobId" />
@@ -826,8 +804,8 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Mesagges">
-            <EntityTypeMapping TypeName="Model.Mesagge">
+          <EntitySetMapping Name="Mesagge">
+            <EntityTypeMapping TypeName="CRMModel.Mesagge">
               <MappingFragment StoreEntitySet="Mesagge">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Text" ColumnName="Text" />
@@ -837,7 +815,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Orders">
-            <EntityTypeMapping TypeName="Model.Order">
+            <EntityTypeMapping TypeName="CRMModel.Orders">
               <MappingFragment StoreEntitySet="Orders">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -848,8 +826,8 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Products">
-            <EntityTypeMapping TypeName="Model.Product">
+          <EntitySetMapping Name="Product">
+            <EntityTypeMapping TypeName="CRMModel.Product">
               <MappingFragment StoreEntitySet="Product">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -858,16 +836,16 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="ProductCategories">
-            <EntityTypeMapping TypeName="Model.ProductCategory">
+          <EntitySetMapping Name="ProductCategory">
+            <EntityTypeMapping TypeName="CRMModel.ProductCategory">
               <MappingFragment StoreEntitySet="ProductCategory">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Stocts">
-            <EntityTypeMapping TypeName="Model.Stoct">
+          <EntitySetMapping Name="Stoct">
+            <EntityTypeMapping TypeName="CRMModel.Stoct">
               <MappingFragment StoreEntitySet="Stoct">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="ProductName" ColumnName="ProductName" />
@@ -876,19 +854,8 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="Model.sysdiagram">
-              <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="definition" ColumnName="definition" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Workers">
-            <EntityTypeMapping TypeName="Model.Worker">
+          <EntitySetMapping Name="Worker">
+            <EntityTypeMapping TypeName="CRMModel.Worker">
               <MappingFragment StoreEntitySet="Worker">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -916,7 +883,7 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />

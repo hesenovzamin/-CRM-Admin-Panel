@@ -17,9 +17,9 @@ namespace CRM.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Product()
         {
-            this.Bonservices = new HashSet<Bonservice>();
+            this.Bonservices = new HashSet<Bonservices>();
             this.Customer_to_Serviceds = new HashSet<Customer_to_Serviceds>();
-            this.Discounts = new HashSet<Discount>();
+            this.Discount = new HashSet<Discount>();
         }
     
         public int Id { get; set; }
@@ -28,11 +28,11 @@ namespace CRM.Models
         public int Price { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bonservice> Bonservices { get; set; }
+        public virtual ICollection<Bonservices> Bonservices { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Customer_to_Serviceds> Customer_to_Serviceds { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Discount> Discounts { get; set; }
+        public virtual ICollection<Discount> Discount { get; set; }
         public virtual ProductCategory ProductCategory { get; set; }
     }
 }

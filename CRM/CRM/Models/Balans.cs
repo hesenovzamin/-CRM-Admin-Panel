@@ -12,7 +12,7 @@ namespace CRM.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Balan
+    public partial class Balans
     {
         public int Id { get; set; }
         public string ProductName { get; set; }

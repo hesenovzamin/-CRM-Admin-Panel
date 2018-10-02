@@ -18,7 +18,7 @@ namespace CRM.Models
         public Customer()
         {
             this.Customer_to_Serviceds = new HashSet<Customer_to_Serviceds>();
-            this.Discounts = new HashSet<Discount>();
+            this.Discount = new HashSet<Discount>();
         }
     
         public int Id { get; set; }
@@ -33,6 +33,6 @@ namespace CRM.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Customer_to_Serviceds> Customer_to_Serviceds { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Discount> Discounts { get; set; }
+        public virtual ICollection<Discount> Discount { get; set; }
     }
 }

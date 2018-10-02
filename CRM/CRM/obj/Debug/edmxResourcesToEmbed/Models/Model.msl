@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="CRM_SYSTEMEntities">
+  <EntityContainerMapping StorageEntityContainer="CRMModelStoreContainer" CdmEntityContainer="CRMEntities">
     <EntitySetMapping Name="C_Transaction">
-      <EntityTypeMapping TypeName="Model.C_Transaction">
+      <EntityTypeMapping TypeName="CRMModel.C_Transaction">
         <MappingFragment StoreEntitySet=" Transaction">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Date" ColumnName="Date" />
@@ -12,8 +12,8 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Admins">
-      <EntityTypeMapping TypeName="Model.Admin">
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="CRMModel.Admin">
         <MappingFragment StoreEntitySet="Admin">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -28,7 +28,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Balans">
-      <EntityTypeMapping TypeName="Model.Balan">
+      <EntityTypeMapping TypeName="CRMModel.Balans">
         <MappingFragment StoreEntitySet="Balans">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="ProductName" ColumnName="ProductName" />
@@ -37,7 +37,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Bonservices">
-      <EntityTypeMapping TypeName="Model.Bonservice">
+      <EntityTypeMapping TypeName="CRMModel.Bonservices">
         <MappingFragment StoreEntitySet="Bonservices">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
@@ -47,7 +47,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Contacts">
-      <EntityTypeMapping TypeName="Model.Contact">
+      <EntityTypeMapping TypeName="CRMModel.Contacts">
         <MappingFragment StoreEntitySet="Contacts">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Email" ColumnName="Email" />
@@ -56,8 +56,8 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Customers">
-      <EntityTypeMapping TypeName="Model.Customer">
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="CRMModel.Customer">
         <MappingFragment StoreEntitySet="Customer">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -71,7 +71,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Customer_to_Serviceds">
-      <EntityTypeMapping TypeName="Model.Customer_to_Serviceds">
+      <EntityTypeMapping TypeName="CRMModel.Customer_to_Serviceds">
         <MappingFragment StoreEntitySet="Customer_to_Serviceds">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
@@ -81,8 +81,8 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Discounts">
-      <EntityTypeMapping TypeName="Model.Discount">
+    <EntitySetMapping Name="Discount">
+      <EntityTypeMapping TypeName="CRMModel.Discount">
         <MappingFragment StoreEntitySet="Discount">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
@@ -91,8 +91,8 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Jobposts">
-      <EntityTypeMapping TypeName="Model.Jobpost">
+    <EntitySetMapping Name="Jobpost">
+      <EntityTypeMapping TypeName="CRMModel.Jobpost">
         <MappingFragment StoreEntitySet="Jobpost">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
@@ -104,8 +104,8 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="JobsApplications">
-      <EntityTypeMapping TypeName="Model.JobsApplication">
+    <EntitySetMapping Name="JobsApplication">
+      <EntityTypeMapping TypeName="CRMModel.JobsApplication">
         <MappingFragment StoreEntitySet="JobsApplication">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="JobId" ColumnName="JobId" />
@@ -117,8 +117,8 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Mesagges">
-      <EntityTypeMapping TypeName="Model.Mesagge">
+    <EntitySetMapping Name="Mesagge">
+      <EntityTypeMapping TypeName="CRMModel.Mesagge">
         <MappingFragment StoreEntitySet="Mesagge">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Text" ColumnName="Text" />
@@ -128,7 +128,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Orders">
-      <EntityTypeMapping TypeName="Model.Order">
+      <EntityTypeMapping TypeName="CRMModel.Orders">
         <MappingFragment StoreEntitySet="Orders">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -139,8 +139,8 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Products">
-      <EntityTypeMapping TypeName="Model.Product">
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="CRMModel.Product">
         <MappingFragment StoreEntitySet="Product">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -149,16 +149,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ProductCategories">
-      <EntityTypeMapping TypeName="Model.ProductCategory">
+    <EntitySetMapping Name="ProductCategory">
+      <EntityTypeMapping TypeName="CRMModel.ProductCategory">
         <MappingFragment StoreEntitySet="ProductCategory">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Stocts">
-      <EntityTypeMapping TypeName="Model.Stoct">
+    <EntitySetMapping Name="Stoct">
+      <EntityTypeMapping TypeName="CRMModel.Stoct">
         <MappingFragment StoreEntitySet="Stoct">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="ProductName" ColumnName="ProductName" />
@@ -167,19 +167,8 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="Model.sysdiagram">
-        <MappingFragment StoreEntitySet="sysdiagrams">
-          <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-          <ScalarProperty Name="version" ColumnName="version" />
-          <ScalarProperty Name="definition" ColumnName="definition" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Workers">
-      <EntityTypeMapping TypeName="Model.Worker">
+    <EntitySetMapping Name="Worker">
+      <EntityTypeMapping TypeName="CRMModel.Worker">
         <MappingFragment StoreEntitySet="Worker">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />

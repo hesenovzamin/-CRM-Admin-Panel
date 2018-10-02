@@ -12,11 +12,13 @@ namespace CRM.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Contact
+    public partial class Orders
     {
         public int Id { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
-        public string Text { get; set; }
+        public string Name { get; set; }
+        public string ProductsName { get; set; }
+        public int Count { get; set; }
+        public int Price { get; set; }
+        public int TotalPrice { get; set; }
     }
 }

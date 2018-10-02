@@ -12,13 +12,14 @@ namespace CRM.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Order
+    public partial class Bonservices
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string ProductsName { get; set; }
-        public int Count { get; set; }
-        public int Price { get; set; }
-        public int TotalPrice { get; set; }
+        public int ProductId { get; set; }
+        public int WorkerId { get; set; }
+        public int Bonus { get; set; }
+    
+        public virtual Product Product { get; set; }
+        public virtual Worker Worker { get; set; }
     }
 }

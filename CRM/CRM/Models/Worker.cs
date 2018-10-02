@@ -17,7 +17,7 @@ namespace CRM.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Worker()
         {
-            this.Bonservices = new HashSet<Bonservice>();
+            this.Bonservices = new HashSet<Bonservices>();
         }
     
         public int Id { get; set; }
@@ -31,6 +31,6 @@ namespace CRM.Models
         public System.DateTime LeaveWorkData { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bonservice> Bonservices { get; set; }
+        public virtual ICollection<Bonservices> Bonservices { get; set; }
     }
 }
